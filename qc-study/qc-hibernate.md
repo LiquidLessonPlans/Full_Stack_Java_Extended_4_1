@@ -73,4 +73,3 @@
  - What is the difference between Dynamic Insert and Dynamic Update? 
  - What is automatic dirty checking? 
  - What is Transactional Write Behind? 
- - Explain how transaction propagation works 
