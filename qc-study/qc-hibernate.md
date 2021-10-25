@@ -8,6 +8,7 @@
    - Hibernate is database agnostic.
    - Hibernate provides abstraction, and handles many common workflows.
    - Hibernate implements a caching strategy and other optimizations.
+   - No need to write any SQL
  - What are the major classes / interfaces of Hibernate? 
    - Configuration, SessionFactory, Session, CriteriaBuilder, Query, Root, Transaction, etc.
  - Tell me how you set up / configure hibernate? What about setting up entity mapping? What files are you editing, what goes in them, etc. 
