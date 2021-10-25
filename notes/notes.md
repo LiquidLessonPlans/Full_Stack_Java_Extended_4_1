@@ -10,6 +10,7 @@
    - [Docker Workflow](./devops/docker-workflow.md)
    - [Docker Cheatsheet](./devops/docker-cheatsheet.md)
  - [Code Challenges](./misc/code-challenges.md)
+ - [REST](./web services/rest.md)
 
 ## Object Oriented Programming
  - [Object Oriented Programming](./java/object-oriented-programming.md)
@@ -78,6 +79,7 @@
  - [Intro to Servlets](./web%20services/intro-to-servlets.md)
  - [Servlet Config](./web%20services/servlet-config.md)
  - [Using Servlets](./web%20services/using-servlets.md)
+ - [REST](./web%20services/rest.md)
 
 ## Amazon Web Services
  - [AWS Overview](./aws/intro-aws.md)
