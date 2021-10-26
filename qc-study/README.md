@@ -33,7 +33,6 @@ These files are full of questions you are likely to be asked as part of QC. You 
  - **[JavaScript](./qc-javascript.md)** \*
  - **[Hibernate/ORM](./qc-hibernate.md)** \*
  - [Servlets](./qc-servlets.md)
- - [JavaScript](./qc-javascript.md)
  - [DevOps](./qc-devops.md)
 
 
