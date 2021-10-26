@@ -29,17 +29,12 @@ These files are full of questions you are likely to be asked as part of QC. You 
 ## Newest Topics Since Last QC:
 \* = **VERY** likely to be asked about. Identified by QC as particularly weak areas for us.
 
- - **[Hibernate/ORM](./qc-hibernate.md)** \*
- - [Junit](./qc-junit.md)
- - [Docker](./qc-docker.md)
- - [SDLC/DevOps](./qc-sdlc-devops.md)
- - [AWS](./qc-aws.md)
  - **[REST](./qc-rest.md)** \*
- - [HTTP](./qc-http.md)
- - [HTML](./qc-html.md)
- - [CSS](./qc-css.md)
  - **[JavaScript](./qc-javascript.md)** \*
- - [AJAX](./qc-ajax.md)
+ - **[Hibernate/ORM](./qc-hibernate.md)** \*
+ - [Servlets](./qc-servlets.md)
+ - [JavaScript](./qc-javascript.md)
+ - [DevOps](./qc-devops.md)
 
 
 ### OOP:
