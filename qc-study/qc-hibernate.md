@@ -59,17 +59,32 @@
  - What is caching? 
    - Caching is the process of storing recently used data in order to reduce the number of calls to the database.
  - What is the difference between L1 and L2 cache? 
+   - L1 cache exists with the hibernate session and is not shared among threads. L2 cache is shared betwee threads and exists beyond a single session.
  - How do you enable second level caching? 
+   - Apply a setting either in xml file, properties file, or programatically: `hibernate.cache.use_second_level_cache=true`
  - Tell me about NamedQueries. 
+   - Named queries are staticly defined HQL scripts, validated by the sessionfactory and invoked by name. Can be thought of as being like a stored procedure in SQL.
  - Can you write native SQL with Hibernate? Is this a good idea? 
- - What are the configuration options for Hibernate? 
+   - Yes, you can write native SQL, but this would then require major refactoring if your database engine changes. 
  - How to specify the SQL dialect? 
+   - Specify in the property `hibernate.dialect` and set it to an approporiate dialect based on database engine. For instance: "org.hibernate.dialect.MariaDB103Dialect"
  - What data must be specified for the SessionFactory? 
- - What is hbm2ddl? 
+   - We need a Configuration object, our mappings (annotated classes or xml map files), and our config settings.
+ - What is hbm2ddl (.auto?)? 
+   - This is the configuration setting that defines hibernate's behavior for creating/updating/dropping schema when the session is built.
  - How would you configure Hibernate to print to the console all SQL statements run? 
- - What are the different object states in Hibernate?  
+   - Specify the property `hibernate.show_sql` and set it to true.
+ - What are the different object states in Hibernate?
+   - Transient - object is created but not yet persisted (associated with the session)
+   - Persistent - object is associated with the session, any changes made to either the object or the database will be tralated across that boundary when the cache flushes.
+   - Detatched - session becomes closed and objects persisted (associaed with the session) are detatched.
  - What methods move objects to different states? 
+   - .save(), .persist(), .merge(), .update(), .saveOrUpdate(), .get(), .load()
  - What is a proxy? When does the proxy resolve to the real object? 
+   - A facade class wrapped around the actual object which takes it's place until hibernate retrieves the corecponding data from the database during lazy retrieval. This is conceptually similar to a promise in javascript.
  - What is the difference between Dynamic Insert and Dynamic Update? 
- - What is automatic dirty checking? 
+   - When hibernate creates SQL to execute it leaves unspecified fields null in the case of insert and ignored in the case of update. It only modifies those with given data, and leaves the rest out.
+ - What is automatic dirty checking?
+   - This is the process by which hibernate notices changes to persistent objects and saves those changes to the database upon cache flush.
  - What is Transactional Write Behind? 
+   - This is the strategy by which hibernate defers the flushing of cache until the last possible moment, usually when a transaction is committed. (Also when flush() is called)
