@@ -1,4 +1,4 @@
-#QC Questions on DevOps
+# QC Questions on DevOps
 
  - What is DevOps? What is the goal of various DevOps processes? 
  - Explain CI/CD. What is the difference between Continuous Deployment and Continuous Delivery? 
