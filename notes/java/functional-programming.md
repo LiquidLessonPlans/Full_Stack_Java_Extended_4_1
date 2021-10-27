@@ -1,5 +1,5 @@
 # Functional Programming in Java
-From wikipedia: In computer science, functional programming is a programming paradigm where programs are constructed by applying and composing functions. It is a declarative programming paradigm in which function definitions are trees of expressions that map values to other values, rather than a sequence of imperative statements which update the running state of the program.
+From wikipedia: *In computer science, functional programming is a programming paradigm where programs are constructed by applying and composing functions. It is a declarative programming paradigm in which function definitions are trees of expressions that map values to other values, rather than a sequence of imperative statements which update the running state of the program.*
 
 Java is not a "pure" functional programming language, but since version 8 Java has had functional programming features based on Lambda Calculus (the basis for funcitonal programming in general). We have, so far, been interested in Object-Orented Programming, which is a type of Procedural Programming. Functional Programming is a type of Declarative Programming. These categories of programming are complex and nuanced, and not really crucial for our needs. We are interested in three main facets: Functional Interfaces, Lambdas, and the Stream API.
 
