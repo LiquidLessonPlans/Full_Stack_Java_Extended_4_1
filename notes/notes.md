@@ -1,6 +1,7 @@
 # Java Full Stack Extended 4.1 Notes
 
 ## **\*NEW\***
+ - [Functional Programming](./java/functional-programming.md)
  - [Docker Abridged](./devops/docker-abridged.md)
    - [Docker](./devops/docker.md)
    - [Docker Containers](./devops/docker-containers.md)
@@ -32,6 +33,7 @@
  - [Java Threads](./java/java-threads.md)
  - [JUnit Testing](./java/junit-testing.md)
  - [Logging with Log4J](./java/log4j.md)
+ - [Functional Programming](./java/functional-programming.md)
 
 ## UI
  - [Intro to HTML](./ui/intro-to-html.md)
