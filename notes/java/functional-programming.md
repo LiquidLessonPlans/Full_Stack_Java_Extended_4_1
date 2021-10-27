@@ -60,4 +60,4 @@ List<Double> grades = students.stream()
 						  .collect(Collectors.toList());
 ```
 
-![](./../images/Java8StreamIntermediateVsTerminalOperations.png)
+<div align="center"><img src="./../images/Java8StreamIntermediateVsTerminalOperations.png"> 
