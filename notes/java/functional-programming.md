@@ -59,3 +59,5 @@ List<Double> grades = students.stream()
 						  .mapToDouble(s -> s.getGrade)
 						  .collect(Collectors.toList());
 ```
+
+![](./../images/Java8StreamIntermediateVsTerminalOperations.png)
