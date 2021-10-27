@@ -47,7 +47,7 @@ public class Execute {
 ## Stream API
 The Java 8 [Stream API](https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html) is a functional-style way of defining operations on a stream of elements. Streams are an abstraction which allow defining operations which do not modify the source data and are lazily executed. Streams **do not store data**, they simply define operations like filtering, mapping, or reducing, and can be combined with other operations and then executed. Some built-in `Stream`s are located in the `java.util.stream` package.
 
-Streams are divided into *intermediate* and *terminal* operations. Intermediate streams return a new stream and are always lazy - they don't actually execute until a terminal operation is called. Terminal operations trigger the execution of the stream pipeline, which allows efficiency by perfoming all operations in a single pass over the data.
+Streams are divided into *intermediate* and *terminal* operations. Intermediate operations return a new stream and are always lazy - they don't actually execute until a terminal operation is called. Terminal operations trigger the execution of the stream pipeline, which allows efficiency by perfoming all operations in a single pass over the data.
 
 Finally, reduction operations take a sequence of elements and combine them into a single result. Stream classes have the `reduce()` and `collect()` methods for this purpose, with many built-in operations defined in the `Collectors` class.
 
@@ -60,4 +60,63 @@ List<Double> grades = students.stream()
 						  .collect(Collectors.toList());
 ```
 
+### Intermediate Operations
+Intermediate operations all take a stream and return a new stream. They are not actually invoked until a terminal operation is called.   
+ - map()
+ - filter()
+ - distinct()
+ - sorted()
+ - limit()
+ - skip()
+
+
+### Terminal Operations
+Terminal operations all take in a stream but do not return another stream. Once a series of streams hits a terminal operation, the intermediate operations are called and the final return type is produced.
+ - forEach()
+ - toArray()
+ - reduce()
+ - collect()
+ - min()
+ - max()
+ - count()
+ - anyMatch()
+ - allMatch()
+ - noneMatch()
+ - findFirst()
+ - findAny()
+
 <div align="center"><img src="./../images/Java8StreamIntermediateVsTerminalOperations.png"> 
+
+	
+### Optional Class
+[The `Optional` class](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html) was introduced in Java 8 to reduce the need for excessive `null` value checking. An `Optional` is a kind of wrapper object which may or may not contain a value, with a few helper methods to handle existing or non-existent values (see Javadocs above).
+
+Optionals are useful as replacements for `null` values when returning an "empty" response from a method. For example:
+
+```java
+public class OptionalExample {
+  public Optional<String> getAmbiguousString(boolean b) {
+    if (true) {
+	  return Optional.of("awesome string!");
+	} else {
+	  return Optional.empty();
+	}
+  }
+  
+  public static void main(String[] args) {
+    Optional<String> optString = getAmbiguousString(false);
+	String theString = optString.orElse(""); // specify a fallback value
+	System.out.println(theString);
+	// we can use the String without fear of NullPointerException now
+  }
+}
+```
+
+### `default` and `static` methods in interfaces
+Java 8 also adds new functionality to interfaces, by allowing interface methods to have implementations in some situations. By declaring a method as `default` in an interface, a "default" implementation of that method can be defined. The purpose of this is to allow additions to interfaces without breaking and having to change code in any of the classes which implement the interface. Thus, the `default` keyword allows updating existing interfaces in a way that is backwards compatible.
+
+Methods can also now be declared as `static` in interfaces with an implementation. Since static methods belong to the interface, no overriding is necessary (or allowed, since it would simply be method hiding). `static` methods in interfaces are generally used as helper methods to assist with reusability of code.
+
+The new features of interfaces in Java 8 bring them closer to the functionality of abstract classes, but there are still key differences. First, constructors are still not allowed in interfaces while they are in abstract classes. Secondly, interfaces allow for multiple inheritance while abstract classes cannot.
+
+However, when two interfaces with `default` methods of the same method signature are implemented, the "diamond problem" - or multiple inheritance problem - can occur. The compiler will complain about duplicate default method inheritance, which can be resolved by overriding the default method with a custom implementation in the class.
