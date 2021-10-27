@@ -18,7 +18,6 @@ This project will be done in teams of 2-3 members that will be assigned when we 
 ### Minimum Requirements
 1. Proper use of OOP principles
 2. Output is presented to user on a web page, and input is accepted from a web form
-3. Webapp(backend) and UI(frontend) are served from AWS and are publically available
 4. CRUD operations are supported for one or more domain objects via the web application's API endpoints and invoked from the frontend
 5. Communication is done with JSON in HTTP request and response bodies.
 6. Abstract all JDBC away with Hibernate
@@ -26,6 +25,7 @@ This project will be done in teams of 2-3 members that will be assigned when we 
 8. All Exceptions are caught and logged to a file
 
 ### Bonus Features
+1. Webapp(backend) and UI(frontend) are served from AWS and are publically available
 1. DevOps CI/CD pipeline to build and deploy project
 2. 80%+ Unit test line coverage for service-layer methods(Test as much as possible, ask trainer if unsure)
 3. Advanced UI Framework (Angular or React)
