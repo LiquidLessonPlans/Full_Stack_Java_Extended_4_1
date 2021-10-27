@@ -88,7 +88,7 @@ Terminal operations all take in a stream but do not return another stream. Once 
 <div align="center"><img src="./../images/Java8StreamIntermediateVsTerminalOperations.png"> </div>
 
 	
-### Optional Class
+## Optional Class
 [The `Optional` class](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html) was introduced in Java 8 to reduce the need for excessive `null` value checking. An `Optional` is a kind of wrapper object which may or may not contain a value, with a few helper methods to handle existing or non-existent values (see Javadocs above).
 
 Optionals are useful as replacements for `null` values when returning an "empty" response from a method. For example:
@@ -112,7 +112,7 @@ public class OptionalExample {
 }
 ```
 
-### `default` and `static` methods in interfaces
+## `default` and `static` methods in interfaces
 Java 8 also adds new functionality to interfaces, by allowing interface methods to have implementations in some situations. By declaring a method as `default` in an interface, a "default" implementation of that method can be defined. The purpose of this is to allow additions to interfaces without breaking and having to change code in any of the classes which implement the interface. Thus, the `default` keyword allows updating existing interfaces in a way that is backwards compatible.
 
 Methods can also now be declared as `static` in interfaces with an implementation. Since static methods belong to the interface, no overriding is necessary (or allowed, since it would simply be method hiding). `static` methods in interfaces are generally used as helper methods to assist with reusability of code.
