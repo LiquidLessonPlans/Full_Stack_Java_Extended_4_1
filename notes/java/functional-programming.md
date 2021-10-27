@@ -85,7 +85,7 @@ Terminal operations all take in a stream but do not return another stream. Once 
  - findFirst()
  - findAny()
 
-<div align="center"><img src="./../images/Java8StreamIntermediateVsTerminalOperations.png"> 
+<div align="center"><img src="./../images/Java8StreamIntermediateVsTerminalOperations.png"> </div>
 
 	
 ### Optional Class
