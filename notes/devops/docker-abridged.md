@@ -3,10 +3,15 @@ The official notes on Docker are very extensive, so we will be building our own 
 
 [QC Questions:](./../../qc-study/qc-docker.md)
  - What is Docker?
+   - Docker is a set of Platform as a Service products that use OS virtualization to deliver software in packages called containers.
  - What is a container?
+   - A container is a tool for packaging an application with it's dependencies so that it runs on it's own in an isolated sandbox. 
  - How is a container different from a virtual machine?
+   - Virtual machines emulate, or virtualize, physical hardware and traditionally run a guest OS required for running other software. Containers, on the other hand, virtualize the OS.
  - What is the Docker Daemon?
+   - The Docker Daemon is the core process of the Docker host that does all the heavy lifting. This manages Docker objects: containers, images, etc. 
  - Why is containerization so important?
+   - Contanerization helps to ensure the application can run reliably regardless of the host environment.Containerization can also help keep the host safe, as the container shouldn't be able to modify or interact with the host environment or other containers.
  - What is a Dockerfile?
  - What commands would you find within a Dockerfile?
  - What is a Docker image?
