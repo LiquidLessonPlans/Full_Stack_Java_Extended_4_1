@@ -13,7 +13,9 @@ The official notes on Docker are very extensive, so we will be building our own 
  - Why is containerization so important?
    - Contanerization helps to ensure the application can run reliably regardless of the host environment.Containerization can also help keep the host safe, as the container shouldn't be able to modify or interact with the host environment or other containers.
  - What is a Dockerfile?
+   - A file that defines everything needed for an image. It outlines the starting point, dependencies, and commands that make up all the processes needed for an image and in turn a container.
  - What commands would you find within a Dockerfile?
+   - FROM, COPY, RUN, 
  - What is a Docker image?
  - How would I create a Docker image from a Dockerfile?
  - What is a Docker container?
