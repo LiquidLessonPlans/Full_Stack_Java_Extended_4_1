@@ -27,7 +27,7 @@ This project will be done in teams of 5-6 members that will be assigned when we 
 11. DevOps CI/CD pipeline is used to build and deploy project to a publicly available remote location
 
 
-## Your App Here
+## Hotel App
 You will need to write a small paragraph describing your application. It should be 4-6 sentences and briefly cover the important points and features.
 
 ### Minimum Viable Product
