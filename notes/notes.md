@@ -2,9 +2,9 @@
 
 ## **\*NEW\***
  - [Intro to Spring](./spring/intro-spring.md)
+ - [Spring Beans](./spring/spring-beans.md)
  - [IoC & Dependency Injection](./spring/spring-di.md)
  - [Spring Configuration](./spring/spring-config.md)
- - [Spring Beans](./spring/spring-beans.md)
  - [Injecting Primitives](./spring/spring-injecting-primitives.md)
  - [Bean Scopes](./spring/spring-bean-scopes.md)
  - [Functional Programming](./java/functional-programming.md)
