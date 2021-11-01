@@ -1,10 +1,5 @@
 # Spring Module - Injecting Primitives
 
-This page details the value attribute and utilizing configuration files to inject primitive and String data into Spring Bean objects.
-
-### References
-* [Spring 4.0.x Documentation](https://docs.spring.io/spring/docs/4.0.x/spring-framework-reference/html/beans.html)
-
 ## Injecting Primitives
 Spring beans have two methods of injecting dependent data, Constructor Injection and Setter Injection.
 
@@ -112,3 +107,6 @@ public class AppConfig {
 
 }
 ```
+
+### References
+* [Spring 4.0.x Documentation](https://docs.spring.io/spring/docs/4.0.x/spring-framework-reference/html/beans.html)
