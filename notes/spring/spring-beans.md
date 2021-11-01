@@ -15,15 +15,15 @@ Take web service for example. With just a few set up steps you can get a simple 
 
 ## Bean Lifecycle
 The management of beans, conducted by the BeanFactory or Application Context, includes instantiation, configuration, and the eventual removal (or destruction) of beans. As a high-level overview:
-1. Beans are first instantiated.
-1. Their properties are set.
-1. Any associated interfaces or objects are made aware of their existence.
-1. The bean is made aware of any associated interfaces as well.
-1. Any other methods, particularly custom created methods, are invoked.
-1. Then the bean is ready for use.
+1. Bean is instantiated
+1. Bean properties are set
+1. Associated interfaces are made aware of the beans existence
+1. The bean is made aware of any associated interfaces as well
+1. Initialization methods, including custom ones, are invoked
+1. Then the bean is ready for use
 1. Once the bean is no longer used, it is marked for removal and a destroy method is invoked for the bean
-1. Custom destroy methods are invoked, if any.
-1. Bean is the destroyed.
+1. Custom destroy methods are invoked, if any
+1. Bean is the destroyed
 
 The following is a visualization of this lifecycle:
 
