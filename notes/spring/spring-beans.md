@@ -57,7 +57,7 @@ Specifically the lifecycle of a Spring Bean in an application context, pursuant 
 #### In-use
 - Bean is ready for use.
 
-### On shutdown of a bean factory (or destruction of a bean), the following lifecycle methods apply:
+#### On shutdown of a bean factory (or destruction of a bean), the following lifecycle methods apply:
 - [postProcessBeforeDestruction methods of DestructionAwareBeanPostProcessors](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/beans/factory/annotation/InitDestroyAnnotationBeanPostProcessor.html#postProcessBeforeDestruction-java.lang.Object-java.lang.String-) - Applies the bean's BeanPostProcessor before its destruction inclucking the invocation of custom destruction callbacks
 - [DisposableBean's destroy](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/beans/factory/DisposableBean.html#destroy--) - Method invoked by bean factory (or ApplicationContext) when a bean is to be destroyed
 - [Custom destroy-method definition] - Custom Defined destroy method. Signature is `public void destroy()`. This method is detected by the [getDestroyMethodName Method](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/support/AbstractBeanDefinition.html#getDestroyMethodName--)
