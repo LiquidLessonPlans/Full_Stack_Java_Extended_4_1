@@ -10,7 +10,7 @@ Spring enables developers to build java applications utilizing a POJO design pat
 ## Frameworks - Overview
 The Spring family of frameworks consist of close to 20 modules, each focusing on a particular task or service. These are grouped into the following layers: Core Container, Data Access/Integration, Messaging, Web, AOP, Aspects, Instrumentation and Test.
 
-![Spring Modules](./spring-overview.png)
+![Spring Modules](./../images/spring-overview.png)
 
 ### Core Container
 The Core Container provide the basic framework for the IoC container and dependency injection.
