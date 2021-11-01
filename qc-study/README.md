@@ -29,10 +29,7 @@ These files are full of questions you are likely to be asked as part of QC. You 
 ## Newest Topics Since Last QC:
 \* = **VERY** likely to be asked about. Identified by QC as particularly weak areas for us.
 
- - **[REST](./qc-rest.md)** \*
- - **[JavaScript](./qc-javascript.md)** \*
- - **[Hibernate/ORM](./qc-hibernate.md)** \*
- - [Servlets](./qc-servlets.md)
+ - [Spring](./qc-spring.md)
  - [DevOps](./qc-devops.md)
 
 
