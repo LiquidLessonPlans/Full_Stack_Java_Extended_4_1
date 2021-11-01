@@ -1,14 +1,12 @@
 # Java Full Stack Extended 4.1 Notes
 
 ## **\*NEW\***
-#### Spring
  - [Intro to Spring](./spring/intro-spring.md)
  - [IoC & Dependency Injection](./spring/spring-di.md)
  - [Spring Configuration](./spring/spring-config.md)
  - [Spring Beans](./spring/spring-beans.md)
  - [Injecting Primitives](./spring/spring-injecting-primitives.md)
  - [Bean Scopes](./spring/spring-bean-scopes.md)
-
  - [Functional Programming](./java/functional-programming.md)
  - [Docker Abridged](./devops/docker-abridged.md)
    - [Docker](./devops/docker.md)
@@ -77,6 +75,14 @@
  - [Intro to Hibernate & ORMs](./misc/hibernate.md)
  - [Hibernate Configuration](./misc/hibernate-config.md)
  - [Executing Statements With Hibernate](./misc/hibernate-querying.md)
+
+#### Spring
+ - [Intro to Spring](./spring/intro-spring.md)
+ - [IoC & Dependency Injection](./spring/spring-di.md)
+ - [Spring Configuration](./spring/spring-config.md)
+ - [Spring Beans](./spring/spring-beans.md)
+ - [Injecting Primitives](./spring/spring-injecting-primitives.md)
+ - [Bean Scopes](./spring/spring-bean-scopes.md)
 
 ## Web Services
  - [Intro to Web Services](./web%20services/intro-to-web-services.md)
