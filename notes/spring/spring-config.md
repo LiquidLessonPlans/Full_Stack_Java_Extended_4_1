@@ -13,7 +13,7 @@ With regard to the configuration metadata, there are three ways this configurati
 
 The following image displays a high-level representation of how Spring works:
 
-![Spring Container](./spring-ioc-overview.png)
+![Spring Container](./../images/spring-ioc-overview.png)
 
 The application classes are combined with configuration data when the ApplicationContext is created and initialized, which produces a fully configured application, or system.
 
