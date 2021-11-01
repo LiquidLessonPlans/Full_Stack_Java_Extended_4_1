@@ -28,7 +28,6 @@ The management of Beans, conducted by the BeanFactory or Application Context, in
 The following is a visualization of this lifecycle:
 
 ![Spring Bean Lifecycle - Visualization](./../images/spring-bean-life-cycle.png)
-
 Specifically the lifecycle of a Spring Bean in an application context, pursuant to the associated interface methods is as follows:
 Instantiate Bean - Bean is instantiated
 Populate bean properties - Bean properties are established.
