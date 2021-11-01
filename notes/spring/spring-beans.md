@@ -14,7 +14,7 @@ Take web service for example. With just a few set up steps you can get a simple 
 
 
 ## Bean Lifecycle
-The management of Beans, conducted by the BeanFactory or Application Context, includes instantiation, configuration and the eventual removal (or destruction) of beans. As a high-level overview:
+The management of beans, conducted by the BeanFactory or Application Context, includes instantiation, configuration, and the eventual removal (or destruction) of beans. As a high-level overview:
 1. Beans are first instantiated.
 1. Their properties are set.
 1. Any associated interfaces or objects are made aware of their existence.
