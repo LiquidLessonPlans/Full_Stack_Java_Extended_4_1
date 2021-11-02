@@ -283,6 +283,25 @@ Here, we specify a "status" property for our class and utilize this to track "ac
 
 Though the actual implementation of the Spring Data managed DAO is hidden (as we don't work with it directly) it is a simple enough implementation. In fact, Spring JPA provides a _SimpleJpaRepository_ interface, which extends the JpaRepository, that defines transaction semantics using annotations. Specifically, a read-only `@Transactional` annotation is used at the class level, which is then overridden for the nonread-only methods. The rest of the transaction semantics are default, but can easily be overridden manually on a per-method basis.
 
+# JPQL Queries
+JPQL is a SQL-like scripting language used by Spring JPA. Very similar to the prepared statements we used with JDBC code, JPQL can be parameterized. We basically write a JPQL template with variables inside, and then parameterize those variables before the query is executed. We can parameterize the template with indices or names, but we cannot do both in a single query. We must choose.
+
+```java
+@Query("SELECT u FROM User u WHERE u.status = :status and u.name = :name")
+User findUserByStatusAndNameNamedParams(
+  @Param("status") Integer status, 
+  @Param("name") String name);
+```
+
+```java
+@Query("SELECT u FROM User u WHERE u.status = ?1")
+User findUserByStatus(Integer status);
+
+@Query("SELECT u FROM User u WHERE u.status = ?1 and u.name = ?2")
+User findUserByStatusAndName(Integer status, String name);
+```
+
+
 ### References
 * [Spring Data JPA - Reference Documentation](https://docs.spring.io/spring-data/jpa/docs/2.3.2.RELEASE/reference/html/#preface)
 * [Spring JPA - API Docs](https://docs.spring.io/spring-data/jpa/docs/current/api/org/springframework/data/jpa/repository/JpaRepository.html)
