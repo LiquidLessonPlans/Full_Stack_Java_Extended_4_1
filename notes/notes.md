@@ -7,6 +7,7 @@
  - [Spring Configuration](./spring/spring-config.md)
  - [Injecting Primitives](./spring/spring-injecting-primitives.md)
  - [Bean Scopes](./spring/spring-bean-scopes.md)
+ - [Spring Boot](./spring/spring-boot.md)
  - [Functional Programming](./java/functional-programming.md)
  - [Docker Abridged](./devops/docker-abridged.md)
    - [Docker](./devops/docker.md)
