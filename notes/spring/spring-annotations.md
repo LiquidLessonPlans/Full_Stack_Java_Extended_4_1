@@ -2,17 +2,17 @@
 
 ## Spring Config
  - @Configuration
- - @ComponentScan
- - @Bean
- - @Component
-   - @Repository
-   - @Service
-   - @Controller
- - @Autowired
+ - @ComponentScan - tells IoC container to configure by scanning for annotated components
+ - @Bean - marks a class as a bean (not for component scanning!)
+ - @Component - marks a class as a component (a bean) for component scanning. There are also the "stereotype" annotations below:
+   - @Repository - marks as a JPA repository bean
+   - @Service - marks as a service bean
+   - @Controller - marks as a controller (servlet) bean
+ - @Autowired - injects dependencies from IoC contrainer automagically
  - @Resource
  - @Qualifier
  - @Required
- - @Inject
+ - @Inject - Another way to inject dependencies from IoC container
  - @Named
 
 ## Spring Data
