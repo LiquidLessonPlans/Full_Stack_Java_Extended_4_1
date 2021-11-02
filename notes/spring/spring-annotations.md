@@ -1,7 +1,7 @@
 # Spring Annotations
 
 ## Spring Config
- - @Configuration
+ - @Configuration - marks a class as the bean configuration class which has methods that return objects to be beanified.
  - @ComponentScan - tells IoC container to configure by scanning for annotated components
  - @Bean - marks a class as a bean (not for component scanning!)
  - @Component - marks a class as a component (a bean) for component scanning. There are also the "stereotype" annotations below:
