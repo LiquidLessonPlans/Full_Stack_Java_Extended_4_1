@@ -17,18 +17,18 @@
 
 ## Spring Data
  - @Query
- - @Repository
- - @Transactional
- - @Param
- - @Id
+ - @Repository - Stereotype annotation - marks as a JPA repository bean
+ - @Transactional - Sets transaction settings
+ - @Param - marks a field as a parameter for a JPQL query
+ - @Id - marks an entity field as the ID (the PK of  database entry)
  - @Transient
  - @CreatedBy, @LastModifiedBy
  - @CreatedDate, @LastModifiedDate
  - @Valid
- - @Min
- - @Max
- - @NotNull
- - @Range
+ - @Min - spring JPA validation, sets minimum valid value
+ - @Max - spring JPA validation, sets maximum valid value
+ - @NotNull - spring JPA validation, field cannot be null
+ - @Range - spring JPA validation, sets minimum and maximum range of values
  - @EnableTransactionManagement
  - @EnableJpaRepositories
 
