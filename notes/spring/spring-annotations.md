@@ -29,6 +29,8 @@
  - @Max
  - @NotNull
  - @Range
+ - @EnableTransactionManagement
+ - @EnableJpaRepositories
 
 ## Spring MVC (Web)
  - @Controller
