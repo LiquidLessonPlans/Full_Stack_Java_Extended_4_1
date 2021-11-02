@@ -1,39 +1,45 @@
  # QC Questions on Spring
  
  - Describe the purpose of the Spring framework.
+   - Spring is a powerful framework that allows us to jump right in to enterprise level application programming. Spring inverts control, helps us achieve loose coupling, and offers robust abstractions/solutions for common needs such as persistence and servlets.
  - What version of Spring are you comfortable working with? Do you know the latest major version released?
+   - The latest major version is version 5, we are currently using spring boot 2.5.6 which includes spring core 5.3.12.
  - What is dependency injection?
+   - This is a technique where an object receives other objects it sepends on, in the most basic form using constructors and setters. 
  - What is inversion of control?
+   - This is a paradigm where program execution and control is handed off to some framework, and our code is invoked by that framework. This inverts the traditional idea of our program beginning with the main method, foolowing our execution, and invoking library methods.
  - How is dependency injection achieved within the Spring framework?
+   - Spring offers DI by providing the dependencies on demand. The dependencies are beans described to a BeanFactory (an IoC Container) with either XML files, or programatically. Spring will autowire these dependencies in as needed.
  - What is the primary IOC container in Spring?
+   - BeanFactory, which was supplanted by a class that extends it: ApplicationContext. ApplicationContext also has been extended for more specific use, like WebAwareApplicationContext. There are others as well like AnnotationConfigApplicationContext.
  - What are some differences between the ApplicationContext and the BeanFactory in Spring?
+   - ApplicationContext extends BeanFactory and contains additional features like messaging and event publication. Also BeanFactory is lazy and ApplicationContext is eager by default.
  - Are beans loaded eagerly or lazily within the ApplicationContext? How can you change this?
+   - By default they are loaded eagerly. This behavior can be changed with the @Lazy annotation.
  - What are some ways that a bean registry can be provided to Spring?
+   - We can supply bean descriptions with XML files, or by scanning for properly annotated classes.
  - What is component-scanning in Spring?
+   - A component is a bean, and component scanning is a method of describing beans where Spring scans through packages of classes looking for properly annotated classes that describe beans.
  - What are the Spring stereotype annotations?
+   - @Component, @Controller, @Repository, @Service, and @RestController
  - What is the difference between manual bean wiring and autowiring?
+   - The @Autowired annotation is used to have Spring grab necessary dependencies from the IoC container and inject them. Manual wiring is requesting a bean by type or name yourself and assigning it to a reference.
  - What is the standard lifecycle of a bean within the ApplicationContext?
+   - Instantiation, awareness, initialization (including custom init methods), post-init-processing, in-use, destruction (including custom destory methods), garbage collection.
  - What are the scopes of a Spring bean? What is the default?
+   - Singleton and Prototype are the basic ones. There are also other used for specific ApplicationContexts, like request, session, and global session scopes.
  - What are the autowiring modes Spring uses to resolve autowired dependencies?
+   - ByType, ByName, no(as in no autowiring), constructor, and autodetect. 
  - What are forms of dependency injection supported by Spring?
+   - Constructor, Setter, field (field autowiring is a big no-no, don't do it.
  - If using Java-class configuration, what is the default name given to a bean? How can you change this?
+   - The default name of a bean is the name of the method which retruns it. We can change the name with the @Qualifier annotation: `@Qualifier("myBeanName")`
  - If using component-scanning, what is the default name given to a bean? How can you change this?
+   - The default name given is the class name with the first letter lowercased. We can change the default name by giving a new name as a string to the @Bean or stereotype annotations. `@Component("myNamedComponent")`
  - How can you provide a scalar or literal value for injection into the property of a Spring bean?
- - What is AOP?
- - What are cross-cutting concerns? Provide examples
- - What is an aspect?
- - What is the difference between a join point and a pointcut?
- - What are some different types of pointcut designators?
- - What is the difference between the this and target pointcut designators?
- - What is the difference between the * and .. wildcards in pointcut expressions?
- - What is aspect weaving?
- - What are some different types of aspect weaving?
- - What type of aspect weaving is supported by Spring AOP?
- - What is advice? List the types of advice supported by Spring AOP
- - What is considered to be the most powerful type of advice? Why?
- - Can you prevent the execution of a join point when using before advice?
- - What is AspectJ? How is it enabled for use within a Spring application?
- - What is the JoinPoint argument used for? What is a ProceedingJoinPoint? When is it used?
+   - In XML config use the <property> tag with name and value attributes. 
+   - In component scanning we use the @Value annotation: `@Value("Default String Value Here")`
+   - In Java-class config ??? Kyle does't know this one!
  - What is Spring MVC? How is it enabled for use within a Spring application?
  - Describe the data flow of a request/response operation within a Spring MVC application
  - List some Spring MVC annotations
@@ -62,3 +68,18 @@
  - What is the purpose of @Query within Spring Data JPA?
  - What are common interfaces which our custom data repository interfaces should extend?
  - How would you go about testing a Spring MVC controller?
+ - What is AOP?
+ - What are cross-cutting concerns? Provide examples
+ - What is an aspect?
+ - What is the difference between a join point and a pointcut?
+ - What are some different types of pointcut designators?
+ - What is the difference between the this and target pointcut designators?
+ - What is the difference between the * and .. wildcards in pointcut expressions?
+ - What is aspect weaving?
+ - What are some different types of aspect weaving?
+ - What type of aspect weaving is supported by Spring AOP?
+ - What is advice? List the types of advice supported by Spring AOP
+ - What is considered to be the most powerful type of advice? Why?
+ - Can you prevent the execution of a join point when using before advice?
+ - What is AspectJ? How is it enabled for use within a Spring application?
+ - What is the JoinPoint argument used for? What is a ProceedingJoinPoint? When is it used?
