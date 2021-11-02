@@ -255,7 +255,7 @@ This method would return a list of Book Objects as a JSON string, allowing the r
 
 
 ### `@RestController`
-Commonly, Spring Web Controllers implement a REST API, thus serving JSON, XML or custom MediaType content. As such, the `@RestController` annotation is a convenience stereotype annotation which combines the features of `@RequestMapping` with the `@ResponseBody` annotations. This allows the use of HTTP method specific Mapping annotations which automatically produce an XML, JSON or other response.
+Commonly, Spring Web Controllers implement a REST API, thus serving JSON, XML or custom MediaType content. As such, the `@RestController` annotation is a convenience stereotype annotation which combines the features of `@Controller` with the `@ResponseBody` annotations. This allows the use of HTTP method specific Mapping annotations which automatically produce an XML, JSON or other response.
 
 CONTROLLER:
 ```
