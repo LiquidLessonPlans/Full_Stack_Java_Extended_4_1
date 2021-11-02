@@ -12,6 +12,7 @@
  - [Spring MVC](./spring/spring-mvc.md)
  - [Spring Validation](./spring/spring-validation.md)
  - [Spring Transactions](./spring/spring-transactions.md)
+ - [Spring Annotations](./spring/spring-annotations.md)
  - [Functional Programming](./java/functional-programming.md)
  - [Docker Abridged](./devops/docker-abridged.md)
    - [Docker](./devops/docker.md)
