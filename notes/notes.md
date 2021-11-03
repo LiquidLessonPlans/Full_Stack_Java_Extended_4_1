@@ -13,12 +13,9 @@
  - [Spring Validation](./spring/spring-validation.md)
  - [Spring Transactions](./spring/spring-transactions.md)
  - [Spring Annotations](./spring/spring-annotations.md)
- - [Functional Programming](./java/functional-programming.md)
- - [Docker Abridged](./devops/docker-abridged.md)
-   - [Docker](./devops/docker.md)
-   - [Docker Containers](./devops/docker-containers.md)
-   - [Docker Workflow](./devops/docker-workflow.md)
-   - [Docker Cheatsheet](./devops/docker-cheatsheet.md)
+ - [Spring AOP](./spring/spring-aop.md)
+ - [Lombok](./misc/lombok.md)
+
 
 
 ## Object Oriented Programming
@@ -116,6 +113,11 @@
  - [DevOps And Agile](./devops/devops-and-agile.md)
  - [Continuous Integration](./devops/continuous-integration.md)
  - [Continuous Delivery and Deployment](./devops/continuous-delivery-deployment.md)
+ - [Docker Abridged](./devops/docker-abridged.md)
+   - [Docker](./devops/docker.md)
+   - [Docker Containers](./devops/docker-containers.md)
+   - [Docker Workflow](./devops/docker-workflow.md)
+   - [Docker Cheatsheet](./devops/docker-cheatsheet.md)
 
 ## Unix / Linux
  - [Linux/Unix](./linux/unix-linux.md)
