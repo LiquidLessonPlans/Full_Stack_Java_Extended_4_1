@@ -13,7 +13,7 @@ First lets define boilerplate code. Boilerplate code is code that must be includ
 - Hashcode
 - Logging Variables
 
-Next, why do we want to redce writing boilerplate code? Writing boilerplate code is tedious, easily overlooked, reduces testing coverage, and muddies up code. Lombok exposes a host of annotations that makes generating this code easy while aleviating the above issues.
+Next, why do we want to reduce writing boilerplate code? Writing boilerplate code is tedious, easily overlooked, reduces testing coverage, and muddies up code. Lombok exposes a host of annotations that makes generating this code easy while aleviating the above issues.
 
 ## Lombok usage
 
