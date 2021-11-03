@@ -41,19 +41,31 @@
    - In component scanning we use the @Value annotation: `@Value("Default String Value Here")`
    - In Java-class config ??? Kyle does't know this one!
  - What is Spring MVC? How is it enabled for use within a Spring application?
+   - MVC stands for Model View Controller. In a spring boot application we just include the "spring-boot-starter-web" dependency. Outside of spring boot we must have the necessary dependencies and we use the annotation @EnableWebMvc.
  - Describe the data flow of a request/response operation within a Spring MVC application
+   - Request comes in to front controller, is dispatched to an appropriate controller which fetches the model requested, this bounces back through the front controller to a view template where the model data is woven into the UI view, this view object is then returned to the front controller, and the response is returned to the client.
  - List some Spring MVC annotations
+   - @RestController, @Controller, @ResponseBody, @RequestBody, @PathVariable, @RequestParam, @RequestHeader, @RequestMapping, @GetMapping, @PostMapping, @PutMapping, @DeleteMapping
  - What is the difference between @RestController and @Controller?
+   - @RestController implies both @Controller and @ResponseBody. @Controller is a stereotype annotation that marks a class as a bean for component scanning.
  - What is the difference between @RequestBody and @ResponseBody?
+   - @RequestBody applies to a parameter object and tells Spring to map the serialized payload data onto that object. @ResponseBody applies to the return type of the method and tells Spring to serialize that object into some test representation like JSON.
  - What is the difference between @RequestParam and @PathVariable?
+   - @RequestParam gets a value associated with a key from the request body, @PathVariable gets a value associated with a key in the URI.
  - What is the DispatcherServlet and what is it used for?
+   - DispatcherServlet delegates requests to other servlets. It acts as a front controller.
  - What is an exception handler? How would you declare one for use within a controller?
- - How would you configure contextual sessions between Spring and Hibernate?
- - What information is provided to the configuration of the DataSource bean within Spring ORM?
- - What information is provided to the configuration of the SessionFactory bean within Spring ORM?
+   - Describes how the program should handle exceptions. We declare it with the use of @ExceptionHandler and give a specific exception class as an attribute, if this exception is thrown in any of the methods of the class it will invoke the annotated method.
+ - Kyle needs to look these up and produce lecture notes about these three topics:
+   - How would you configure contextual sessions between Spring and Hibernate?
+   - What information is provided to the configuration of the DataSource bean within Spring ORM?
+   - What information is provided to the configuration of the SessionFactory bean within Spring ORM?
  - What is the purpose of @Transactional? Where should this annotation be placed? How is its use enabled?
+   - @Transactional is used to describe transaction propigation strategies. This should be placed on a class or method. To enable transaction management in Spring we use the @EnableTransactionManagement annotation. How to enable this with XML config? -Kyle needs to learn more about the non-component-scanning configs
  - What are transaction propagation levels in Spring ORM?
+   - MANDATORY, NESTED, NEVER, NOT_SUPPORTED, REQUIRED, REQUIRES_NEW, SUPPORTS
  - What are some examples of JSR-303 (Bean Validator) annotations?
+   - @AssetFalse, @AssertTrue, @DecimalMax, @DecimalMin, @Digits, @Future, @Past, @Max, @Min, @NotNull, @Pattern
  - What is the purpose of the RestTemplate class within Spring?
  - What is Spring Boot?
  - Why is Spring Boot said to be "opinionated"?
