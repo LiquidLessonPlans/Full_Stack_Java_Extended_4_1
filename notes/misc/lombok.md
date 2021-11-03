@@ -1,9 +1,5 @@
 # Lombok
 
-This page details the use of Project Lombok with Spring to reduce writing/generating boilerplate code..
-
-## What is Lombok
-
 According to the official website, `"Project Lombok is a java library that automatically plugs into your editor and build tools, spicing up your java. Never write another getter or equals method again, with one annotation your class has a fully featured builder, Automate your logging variables, and much more."` Project `Lombok` isn't unique to Spring. `Lombok` can be used with vanilla Java however, `Lombok` and Spring have a common goal; reduce the amount of boilerplate code by autogenerating the required code elements at compiletime.
 
 ## Why use Lombok
