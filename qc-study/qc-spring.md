@@ -128,4 +128,4 @@
  - What is AspectJ? How is it enabled for use within a Spring application?
    - AspectJ is an Aspect Oriented Programming extension to the Java language. It is enabled in Spring with the @EnableAspectJAutoProxy annotation.
  - What is the JoinPoint argument used for? What is a ProceedingJoinPoint? When is it used?
-  - JoinPoint is an object that holds information about the program state surrounding a join point. It stores information that may be useful when executing advice. ProceedingJoinPoint is similar and also contains the proceed() method which can be used with @Around advice type to choose to or not to proceed to the advised method.
+   - JoinPoint is an object that holds information about the program state surrounding a join point. It stores information that may be useful when executing advice. ProceedingJoinPoint is similar and also contains the proceed() method which can be used with @Around advice type to choose to or not to proceed to the advised method.
