@@ -67,13 +67,25 @@
  - What are some examples of JSR-303 (Bean Validator) annotations?
    - @AssetFalse, @AssertTrue, @DecimalMax, @DecimalMin, @Digits, @Future, @Past, @Max, @Min, @NotNull, @Pattern
  - What is the purpose of the RestTemplate class within Spring?
+   - RestTemplate allows us to create a client that consumes a remote API inside our Spring application. This feature is depricated as of Spring version 5.
  - What is Spring Boot?
+   - Spring boot is a part of the Spring suite which allows us to rapidly begin an enterprise level spring application by eshewing boilerplate configuration in favor of highly opinionated ready-to-go project foundation.
  - Why is Spring Boot said to be "opinionated"?
+   - This means that Spring Boot is designed to be used in a specific way, and adhering to those opinions will allow us to fully leverage the benefits of this solution. The more we deviate from these opinions the more difficult it is to utilize the benefits of this solution.
  - What is the Spring Boot starter POM? Why is it useful?
+   - is a boilerplate POM.xml file which includes the neseccary dependencies for maven to acquire in order to start our project.
  - What are some notable features in Spring Boot?
+   - Pre built and configured SpringBootApplication ready to be run.
+   - Spring Initializr which generates the boilerplate opinionated foundation project for us.
+   - starter dependencies which include other necessary dependencies, starter-web, starter-data-jpa for instance.
+   - Spring Boot Actuator - lets us access API endpoints that can provide info about our program or even invoke behaviors like shutdown.
+   - Spring Boot DevTools - change certain features to make development easier (disable caching, automatic restarts)
  - What annotation is used to denote an application as a Spring Boot application? Where should this be placed?
+   - @EnableAutoConfiguration, or @SpringBootApplication. These are placed on the configuration class (either the class the main method appears in for component scanning, or the class that defines beans for java-class configuration).
  - What other annotations are implied by @SpringBootApplication?
+   - The @SpringBootApplication annotation is equivalent to using @Configuration, @EnableAutoConfiguration, and @ComponentScan with their default attributes. -Spring docs
  - What file formats does Spring Boot support for configuration?
+   - .xml, yaml, and .properties to name a few.
  - What is Spring Data JPA?
  - What is a repository interface?
  - How does Spring Data JPA figure out how to query our data source if it uses interfaces with no explicitly defined implementations?
