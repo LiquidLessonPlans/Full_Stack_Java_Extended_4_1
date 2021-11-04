@@ -110,12 +110,22 @@
    - Within, execution, target, this, @args, @Within, @Annotation, @Target
  - What is the difference between the this and target pointcut designators?
    - `This` targets a bean of the given type, `target` targets a proxy object of a given type.
- - What is the difference between the * and .. wildcards in pointcut expressions?
+ - What is the difference between the \* and .. wildcards in pointcut expressions?
+   - `\*` is a wildcard for the method signature parts like access modifiers, and return types. `..` is the wildcard for 0 or more parameters.
  - What is aspect weaving?
+   - The process at compile time where aspects and advice are "woven" or inlined into our class files.
  - What are some different types of aspect weaving?
+   - Compile-time, Post-compile-time (binary weaving), load-time.
  - What type of aspect weaving is supported by Spring AOP?
+   - Load time weaving where the IoC container proxies beans, and these proxies are woven with advice.
  - What is advice? List the types of advice supported by Spring AOP
+   - In Java advice is always a method. Advice is the code we want to execute at some joinpoint, targetted by a pointcut.
+   - @Before, @After, @AfterThrowing, @AfterReturning, @Around
  - What is considered to be the most powerful type of advice? Why?
+   - @Around, because we can choose to not even invoke the advised method, and instead return or throw a result ourselves.
  - Can you prevent the execution of a join point when using before advice?
+   - No. Only around does this, which is why @Around is considered the most powerful advice.
  - What is AspectJ? How is it enabled for use within a Spring application?
+   - AspectJ is an Aspect Oriented Programming extension to the Java language. It is enabled in Spring with the @EnableAspectJAutoProxy annotation.
  - What is the JoinPoint argument used for? What is a ProceedingJoinPoint? When is it used?
+  - JoinPoint is an object that holds information about the program state surrounding a join point. It stores information that may be useful when executing advice. ProceedingJoinPoint is similar and also contains the proceed() method which can be used with @Around advice type to choose to or not to proceed to the advised method.
