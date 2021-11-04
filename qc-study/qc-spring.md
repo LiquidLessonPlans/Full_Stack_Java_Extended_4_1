@@ -87,17 +87,29 @@
  - What file formats does Spring Boot support for configuration?
    - .xml, yaml, and .properties to name a few.
  - What is Spring Data JPA?
+   - This is Spring's persistence API, running Hibernate as the default JPA provider. 
  - What is a repository interface?
+   - An interface we implement in order to expose CRUD functionality.
  - How does Spring Data JPA figure out how to query our data source if it uses interfaces with no explicitly defined implementations?
+   - The interfaces are instantiated as beans thanks to the @Repository annotation, and these beans contain concrete implementations built by reflection/annotations.
  - What is the purpose of @Query within Spring Data JPA?
+   - To mark a method as a query method which returns data from a datasource. We can provide the @Query annotation with JPQL or Native (SQL) queries
  - What are common interfaces which our custom data repository interfaces should extend?
+   - JpaRepository, CrudRepository, SimpleJpaRepository, PagingAndSortingRepository
  - How would you go about testing a Spring MVC controller?
+   - We can hit our endpoints with a client like postman, which has the ability to create and run test suites checking different responses from the API.
  - What is AOP?
+   - Aspect Oriented Programming, a different way of designing applications where we separate out aspects based on their functionality as they address cross-cutting concerns. This allows for even more loosely coupled code.
  - What are cross-cutting concerns? Provide examples
+   - A problem that needs solving throughout our application, not tied to any specific layer, class, or functionality. Security, logging, error/exception handling, data access, etc.
  - What is an aspect?
+   - An aspect encapsulates advice. It is a class or other encapsulation that contains the advice needed to solve cross-cutting concerns.
  - What is the difference between a join point and a pointcut?
+   - A join point is the point in program execution at which the advice is needed, it is targetted by a point cut which advises the program at the join point.
  - What are some different types of pointcut designators?
+   - Within, execution, target, this, @args, @Within, @Annotation, @Target
  - What is the difference between the this and target pointcut designators?
+   - `This` targets a bean of the given type, `target` targets a proxy object of a given type.
  - What is the difference between the * and .. wildcards in pointcut expressions?
  - What is aspect weaving?
  - What are some different types of aspect weaving?
