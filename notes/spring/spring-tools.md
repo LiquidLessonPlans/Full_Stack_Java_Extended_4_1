@@ -33,7 +33,7 @@ Simply include `spring-boot-devtools` dependency in your project file. Please re
 It is best practice to flag the dependency as `optional` in Maven or `compileOnly` in Gradle to prevent transitive inclusion in other dependent modules.
 
 
-# Spring Boot Module - Spring Boot Actuator
+# Spring Boot Actuator
 
 This page details Spring Boot Actuator to monitor and manage web applications
 
