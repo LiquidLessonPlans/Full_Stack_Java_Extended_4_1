@@ -1,10 +1,4 @@
-# Spring Boot Module - Spring Boot DevTools
-
-This page details the use of Spring Boot DevTools
-
-### References
-
-- [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/1.5.16.RELEASE/reference/html/using-boot-devtools.html)
+# Spring Tools
 
 ## Spring Boot DevTools
 
@@ -45,10 +39,6 @@ This page details Spring Boot Actuator to monitor and manage web applications
 
 Spring Boot has really become popular as more and more companies create or convert their systems using microservice patterns.
 
-### References
-
-- [Spring Boot Actuator Production Features](https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html)
-- [Spring Boot Actuator Web API](https://docs.spring.io/spring-boot/docs/current/actuator-api/html/)
 
 ## Spring Boot Actuator
 
@@ -108,3 +98,10 @@ management.endpoints.web.include=info, health
 Once your endpoints are enabled and exposed you can access the information by sending a request to `/actuator/<endpoint-id>`.
 
 `Acutator` is used to handle many management and monitoring production operations. This document is a very short overview of the use. Please refer to the documentation for more details.
+
+
+### References
+- [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/1.5.16.RELEASE/reference/html/using-boot-devtools.html)
+- [Spring Boot Actuator Production Features](https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html)
+- [Spring Boot Actuator Web API](https://docs.spring.io/spring-boot/docs/current/actuator-api/html/)
+
