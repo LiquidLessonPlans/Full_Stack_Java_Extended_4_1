@@ -15,6 +15,7 @@
  - [Spring Annotations](./spring/spring-annotations.md)
  - [Spring AOP](./spring/spring-aop.md)
  - [Spring Tools](./spring/spring-tools.md)
+ - [Consumign APIs from Java](./misc/consuming-api.md)
  - [Lombok](./misc/lombok.md)
 
 
