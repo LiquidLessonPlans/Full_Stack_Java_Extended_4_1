@@ -30,7 +30,7 @@ Spring Boot DevTools optimizes restarts by using separate ClassLoaders. The firs
 
 Simply include `spring-boot-devtools` dependency in your project file. Please refer to the documentation for any special configurations that you may want to change.
 
-It is best practice to flag the dependency as `optional` in Mave or `compileOnly` in Gradle to prevent transitive inclusion in other dependent modules.
+It is best practice to flag the dependency as `optional` in Maven or `compileOnly` in Gradle to prevent transitive inclusion in other dependent modules.
 
 
 # Spring Boot Module - Spring Boot Actuator
