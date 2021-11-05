@@ -6,8 +6,9 @@
  - [Our GitHub Orginization](https://github.com/210913-java-full-stack)
  - [QC Study](./qc-study)
 
-### Our First App
+### Our Apps
  - [To-Do App](https://github.com/210913-java-full-stack/To-Do-App)
+ - [To-Do-Two](https://github.com/210913-java-full-stack/ToDoTwo)
 
 ### Sample Repos
  - [Simple Samples](https://github.com/simple-samples)
