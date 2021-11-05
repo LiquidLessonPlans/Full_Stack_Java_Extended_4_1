@@ -19,7 +19,7 @@
  - What are some ways that a bean registry can be provided to Spring?
    - We can supply bean descriptions with XML files, or by scanning for properly annotated classes.
  - What is component-scanning in Spring?
-   - A component is a bean, and component scanning is a method of describing beans where Spring scans through packages of classes looking for properly annotated classes that describe beans.
+   - A component is a bean, and component scanning is a method of describing beans where Spring scans through specified packages of classes looking for properly annotated classes that describe beans.
  - What are the Spring stereotype annotations?
    - @Component, @Controller, @Repository, @Service, and @RestController
  - What is the difference between manual bean wiring and autowiring?
