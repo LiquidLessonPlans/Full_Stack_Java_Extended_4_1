@@ -1,13 +1,47 @@
 # Java Full Stack Extended 4.1 Notes
 
 ## **\*NEW\***
+### TypeScript
  - [Intro to TypeScript](./typescript/intro-typescript.md)
  - [TS Variables](./typescript/ts-variables.md)
  - [TS Classes](./typescript/ts-classes.md)
  - [TS Decorators](./typescript/ts-decorators.md)
  - [TS Interfaces](./typescript/ts-interfaces.md)
 
+[](./angular/)
 
+### Intro to Angular
+ - [History of Angular](./angular/history.md)
+ - [Single Page Application](./angular/angular-spa.md)
+ - [WebPack](./angular/webpack.md)
+ - [Angular CLI](./angular/angular-cli.md)
+
+### Angular Part 1:
+ - [Node & NPM](./angular/node-npm.md)
+ - [Components](./angular/components.md)
+ - [Modules](./angular/modules.md)
+ - [Directives](./angular/directives.md)
+
+### Angular Part 2:
+ - [Pipes](./angular/pipes.md)
+ - [Data Binding](./angular/data-binding.md)
+ - [Services](./angular/services.md)
+
+### Angular Part 3:
+ - [Events](./angular/events.md)
+ - [Pub/Sub Pattern](./angular/pub-sub.md)
+ - [RxJS](./angular/rxjs.md)
+ - [HttpClient](./angular/http-client.md)
+ - [Routing](./angular/routing.md)
+ - [Testing](./angular/testing.md)
+ - [Review](./angular/review.md)
+
+### SDLC:
+ - [Intro to SDLC](./sdlc/intro-sdlc.md)
+ - [Agile/Scrum Concepts](./sdlc/agile-concepts.md)
+ - [Agile vs Waterfall](./sdlc/agile-vs-waterfall.md)
+ - [story Pointing](./sdlc/stories.md)
+ - [Scrum Ceremonies](./sdlc/scrum-ceremonies.md)
 
 
 
