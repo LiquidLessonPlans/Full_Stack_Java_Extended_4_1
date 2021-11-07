@@ -4,17 +4,17 @@ An [EventEmitter](https://angular.io/api/core/EventEmitter) is used to emit cust
 
 Angular uses `@Input` and `@Output` decorators to flow data between components. We can also use Angular services to flow data between the components. If we have to pass data into a component we use the `@Input` decorator, and if we have to emit the event or data from a component we use `@Output` decorator with the `EventEmitter` API.
 
-![Component Interaction](./../images/component-interaction.PNG)
+![Component Interaction](./../images/component-interaction.png)
 
 ## `@Input` decorator
 
 In Angular, the [`@Input`](https://angular.io/api/core/Input) decorator is defined in the [@angular/core](https://angular.io/api/core) package that marks a class field as an **input property** and supplies configuration metadata.
 
-![Input flow](./../images/input-flow.PNG)
+![Input flow](./../images/input-flow.png)
 
 **Example:** Let us create an angular application with at least one child component. Run the `ng new event-emitter-demo` CLI command to create an Angular application. Here, we already have an AppComponent considered as a parent component. Run the `ng g component child` CLI command to create an child component for the AppComponent.
 
-![Child Component](./../images/child-component.PNG)
+![Child Component](./../images/child-component.png)
 
 In `child.component.ts`, we create a `count` property and decorate with the `@Input()`, which implies that value of `count` property will be set outside from the ChildComponent.
 
@@ -51,7 +51,7 @@ export class AppComponent {
 
 When we run this application, we are able to see the below output:
 
-![output screen](./../images/input-example.PNG)
+![output screen](./../images/input-example.png)
 
 ## Component events with EventEmitter and `@Output`
 
@@ -59,7 +59,7 @@ In Angular, a component can emit an event using [`@Output`](https://angular.io/a
 
 `@Output` decorator that marks a class field as an **output property** and supplies configuration metadata.
 
-![Output Flow](./../images/output-flow.PNG)
+![Output Flow](./../images/output-flow.png)
 
 **Example:**  To emit data and event out from a component, we create an instance of EventEmitter and annotate that property and with `@Output` decorator. This instance calls `emit()` method to emit a payload which can be received by an event object `$event`.
 
@@ -130,7 +130,7 @@ export class AppComponent {
 
 When we run this application, we are able to see the below output:
 
-![Event Emitter Output](./../images/event-emitter-example.PNG)
+![Event Emitter Output](./../images/event-emitter-example.png)
 
 In this example, we use property binding to send `count` value from the parent component to child component and we use custom event binding to get the updated `count` value from  the child component to parent component.
 
