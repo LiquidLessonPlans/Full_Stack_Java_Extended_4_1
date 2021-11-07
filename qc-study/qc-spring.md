@@ -39,7 +39,7 @@
  - How can you provide a scalar or literal value for injection into the property of a Spring bean?
    - In XML config use the <property> tag with name and value attributes. 
    - In component scanning we use the @Value annotation: `@Value("Default String Value Here")`
-   - In Java-class config ??? Kyle does't know this one!
+   - In Java-class config you can inject the value into the constructor.
  - What is Spring MVC? How is it enabled for use within a Spring application?
    - MVC stands for Model View Controller. In a spring boot application we just include the "spring-boot-starter-web" dependency. Outside of spring boot we must have the necessary dependencies and we use the annotation @EnableWebMvc.
  - Describe the data flow of a request/response operation within a Spring MVC application
@@ -56,12 +56,14 @@
    - DispatcherServlet delegates requests to other servlets. It acts as a front controller.
  - What is an exception handler? How would you declare one for use within a controller?
    - Describes how the program should handle exceptions. We declare it with the use of @ExceptionHandler and give a specific exception class as an attribute, if this exception is thrown in any of the methods of the class it will invoke the annotated method.
- - Kyle needs to look these up and produce lecture notes about these three topics:
-   - How would you configure contextual sessions between Spring and Hibernate?
-   - What information is provided to the configuration of the DataSource bean within Spring ORM?
-   - What information is provided to the configuration of the SessionFactory bean within Spring ORM?
+ - How would you configure contextual sessions between Spring and Hibernate?
+   - Prior to Spring 3.0 we would have used Spring's HibernateTemplate to manage sessions. Starting with 3.0 we can make use of Hibernate contextual sessions directly via the Hibernate SessionFactory.
+ - What information is provided to the configuration of the DataSource bean within Spring ORM?
+   - Datasource properties needed to connect, such as: URL, username, password, driver, dialect
+ - What information is provided to the configuration of the SessionFactory bean within Spring ORM?
+   - Hibernate properties, such as: generate-ddl, ddl-auto, enable_lazy_load_no_trans
  - What is the purpose of @Transactional? Where should this annotation be placed? How is its use enabled?
-   - @Transactional is used to describe transaction propigation strategies. This should be placed on a class or method. To enable transaction management in Spring we use the @EnableTransactionManagement annotation. How to enable this with XML config? -Kyle needs to learn more about the non-component-scanning configs
+   - @Transactional is used to describe transaction propigation strategies. This should be placed on a class or method. To enable transaction management in Spring we use the @EnableTransactionManagement annotation, or the XML element: <tx:annotation-driven/>
  - What are transaction propagation levels in Spring ORM?
    - MANDATORY, NESTED, NEVER, NOT_SUPPORTED, REQUIRED, REQUIRES_NEW, SUPPORTS
  - What are some examples of JSR-303 (Bean Validator) annotations?
