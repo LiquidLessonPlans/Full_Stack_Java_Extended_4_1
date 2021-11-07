@@ -1,0 +1,61 @@
+# QC Qeustions on Angular
+ - What is Angular?
+ - What are some differences between Angular and AngularJS?
+ - What version of Angular are you comfortable working with?
+ - What is the latest released version of Angular?
+ - What is the Angular CLI?
+ - How can you create a new Angular project on the command line using the Angular CLI?
+ - How can you create a new component on the command line using the Angular CLI?
+ - How can you create a new service on the command line using the Angular CLI?
+ - What are components?
+ - What is a Angular module?
+ - What is a directive?
+ - What are examples of structural directives?
+ - What are examples of attribute directives?
+ - Is a component considered a directive? Why or why not?
+ - What are the different types of data binding supported by Angular?
+ - What is interpolation? Is it different than property binding?
+ - What is event binding? Describe the syntax
+ - What is two-way binding? Describe the syntax and name the directive required
+ - What is a Angular pipe?
+ - What is a template?
+ - What is an Angular service?
+ - What is a decorator?
+ - What are the properties of the metadata object passed to the @Component decorator?
+ - What are the properties of the metadata object passed to the @NgModule decorator?
+ - How are components registered to an Angular module?
+ - How are directives registered to an Angular module?
+ - How are services registered to an Angular module?
+ - How are pipes registered to an Angular module?
+ - How does routing work in Angular?
+ - Where does the ngModel directive come from?
+ - What is the purpose of the HttpClientModule?
+ - What is an observable? Describe some of their use cases in Angular applications
+ - How can a component be notified of new values provided to an observable?
+ - What makes a “single page application” (SPA) different from a normal web page?
+ - Explain the difference between server-side and client-side rendering
+ - What are some features of the Angular framework?
+ - How does TypeScript relate to JavaScript? What are the major benefits of using it over JavaScript?
+ - List the data types of TypeScript
+ - How would you create a new Angular project?
+ - What is a component? How would you create one? List some other commands using the Angular CLI
+ - What files make up a component? What is the “spec” file used for?
+ - Explain the relevance of npm to Angular projects. Which file does npm use to track dependencies?
+ - List some decorators for Angular apps
+ - What is the lifecycle of a component? List some lifecycle hooks
+ - What is a directive and what are the different types? How to tell these directives apart with syntax?
+ - What is the benefit of using a directive like NgClass over the class attribute, or even property binding to the class attribute?
+ - What is a pipe? A service?
+ - How would you create a custom pipe? What about a service?
+ - How does dependency injection work in Angular?
+ - What is an Angular module? What properties should you set inside it?
+ - What’s the difference between a JavaScript module and Angular module? What are some common Angular modules?
+ - How would you lazy load a module?
+ - How have you used the HttpClient? What methods does it have and what do they return?
+ - What is an Observable? What’s the difference between it and a Promise?
+ - What forms of data binding does Angular support? Explain the syntax for each
+ - What does Webpack do for your ng project?
+ - How would you implement routing in your project?
+ - What is an EventEmitter and when would you use one?
+ - What’s the difference between using reactive and template-driven forms? How would you setup each?
+ - How would you run your unit tests for an Angular project?
