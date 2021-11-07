@@ -6,11 +6,11 @@ The obserser pattern is similar to the [publish/subscribe](https://en.wikipedia.
 
 An observable can deliver multiple values of any type (literals, messages, or events). The API for receiving values is the same whether the values are delivered synchronously or asynchronously and the setup and the logic are both handled by the observable. We'll only concentrate on subscribing to consume values, and when done, unsubscribing. The observer subscribes to the observable to receive the value. To execute the observable we have created and begin receiving notifications, we call its `subscribe()` method, passing an observer. The `unsubscribe()` method is called to stop receiving notifications.  
 
-![](./images/Observable.png)
+![](./../images/Observable.png)
 
 The observer defines three callback methods -  `next()`, `error()`, and `complete()`. The observable invokes the `next()` callback whenever the value arrives in the stream. It passes the value as the argument to the next callback. If the error occurs, then the `error()` callback is invoked. It invokes the `complete() `callback when the stream completes.
 
-![](./images/observable-stream.PNG)
+![](./../images/observable-stream.png)
 
 **Example:** 
 ```typescript
@@ -78,7 +78,7 @@ By default an RxJS Observable is unicast, i.e. each subscribed observer has an i
 
 Every Subject is an Observer. It is an object with the methods `next(v)`, `error(e)`, and `complete()`. To feed a new value to the Subject, just call `next(theValue)`, and it will be multicast to the Observers registered to listen to the Subject. We subscribe to the Subject to recieve values normally.
 
-![](./images/subject.PNG)
+![](./../images/subject.png)
 
 **Example:**  Here, we have two Observers attached to a Subject and we feed some values to the Subject.
 
