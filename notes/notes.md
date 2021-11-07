@@ -1,22 +1,13 @@
 # Java Full Stack Extended 4.1 Notes
 
 ## **\*NEW\***
- - [Intro to Spring](./spring/intro-spring.md)
- - [Spring Beans](./spring/spring-beans.md)
- - [IoC & Dependency Injection](./spring/spring-di.md)
- - [Spring Configuration](./spring/spring-config.md)
- - [Injecting Primitives](./spring/spring-injecting-primitives.md)
- - [Bean Scopes](./spring/spring-bean-scopes.md)
- - [Spring Boot](./spring/spring-boot.md)
- - [Spring Data](./spring/spring-data.md)
- - [Spring MVC](./spring/spring-mvc.md)
- - [Spring Validation](./spring/spring-validation.md)
- - [Spring Transactions](./spring/spring-transactions.md)
- - [Spring Annotations](./spring/spring-annotations.md)
- - [Spring AOP](./spring/spring-aop.md)
- - [Spring Tools](./spring/spring-tools.md)
- - [Consumign APIs from Java](./misc/consuming-api.md)
- - [Lombok](./misc/lombok.md)
+ - [Intro to TypeScript](./typescript/intro-typescript.md)
+ - [TS Variables](./typescript/ts-variables.md)
+ - [TS Classes](./typescript/ts-classes.md)
+ - [TS Decorators](./typescript/ts-decorators.md)
+ - [TS Interfaces](./typescript/ts-interfaces.md)
+
+
 
 
 
@@ -83,11 +74,19 @@
 
 #### Spring
  - [Intro to Spring](./spring/intro-spring.md)
+ - [Spring Beans](./spring/spring-beans.md)
  - [IoC & Dependency Injection](./spring/spring-di.md)
  - [Spring Configuration](./spring/spring-config.md)
- - [Spring Beans](./spring/spring-beans.md)
  - [Injecting Primitives](./spring/spring-injecting-primitives.md)
  - [Bean Scopes](./spring/spring-bean-scopes.md)
+ - [Spring Boot](./spring/spring-boot.md)
+ - [Spring Data](./spring/spring-data.md)
+ - [Spring MVC](./spring/spring-mvc.md)
+ - [Spring Validation](./spring/spring-validation.md)
+ - [Spring Transactions](./spring/spring-transactions.md)
+ - [Spring Annotations](./spring/spring-annotations.md)
+ - [Spring AOP](./spring/spring-aop.md)
+ - [Spring Tools](./spring/spring-tools.md)
 
 ## Web Services
  - [Intro to Web Services](./web%20services/intro-to-web-services.md)
@@ -133,3 +132,5 @@
  - [Front Controller Design Pattern](./web%20services/front-controller.md)
  - [Jackson Library](./misc/jackson.md)
  - [Code Challenges](./misc/code-challenges.md)
+ - [Consuming APIs from Java](./misc/consuming-api.md)
+ - [Lombok](./misc/lombok.md)
