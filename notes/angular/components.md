@@ -76,7 +76,7 @@ Angular creates a component; renders it; creates and renders its children; check
 
 The below diagram illustrates the order in which the eight hooks are executed.
 
-![](./images/hooks.png)
+![](./../images/hooks.png)
 
 **constructor()** - The constructor of the component class gets executed first, before the execution of any other lifecycle hook events. If we need to inject any dependencies into the component, then the constructor is the best place to do so.
 
