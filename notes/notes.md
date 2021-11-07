@@ -54,6 +54,13 @@
  - [AJAX & Fetch](./javascript/ajax-fetch.md)
  - [Document Object Model (DOM)](./javascript/javascript-dom.md)
 
+## TypeScript
+ - [Intro to TypeScript](./typescript/intro-typescript.md)
+ - [TS Variables](./typescript/ts-variables.md)
+ - [TS Classes](./typescript/ts-classes.md)
+ - [TS Decorators](./typescript/ts-decorators.md)
+ - [TS Interfaces](./typescript/ts-interfaces.md)
+
 ## SQL
  - [Intro to SQL](./sql/intro-to-sql.md)
  - [Relational Database Management Systems (RDBMS)](./sql/intro-to-rdbms.md)
@@ -72,7 +79,7 @@
  - [Hibernate Configuration](./misc/hibernate-config.md)
  - [Executing Statements With Hibernate](./misc/hibernate-querying.md)
 
-#### Spring
+## Spring
  - [Intro to Spring](./spring/intro-spring.md)
  - [Spring Beans](./spring/spring-beans.md)
  - [IoC & Dependency Injection](./spring/spring-di.md)
@@ -87,6 +94,9 @@
  - [Spring Annotations](./spring/spring-annotations.md)
  - [Spring AOP](./spring/spring-aop.md)
  - [Spring Tools](./spring/spring-tools.md)
+
+## Angular 4
+
 
 ## Web Services
  - [Intro to Web Services](./web%20services/intro-to-web-services.md)
