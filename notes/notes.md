@@ -40,7 +40,7 @@
  - [Intro to SDLC](./sdlc/intro-sdlc.md)
  - [Agile/Scrum Concepts](./sdlc/agile-concepts.md)
  - [Agile vs Waterfall](./sdlc/agile-vs-waterfall.md)
- - [story Pointing](./sdlc/stories.md)
+ - [Story Pointing](./sdlc/stories.md)
  - [Scrum Ceremonies](./sdlc/scrum-ceremonies.md)
 
 
