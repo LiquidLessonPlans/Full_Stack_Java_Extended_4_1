@@ -8,8 +8,6 @@
  - [TS Decorators](./typescript/ts-decorators.md)
  - [TS Interfaces](./typescript/ts-interfaces.md)
 
-[](./angular/)
-
 ### Intro to Angular
  - [History of Angular](./angular/history.md)
  - [Single Page Application](./angular/angular-spa.md)
@@ -131,7 +129,24 @@
  - [Spring Tools](./spring/spring-tools.md)
 
 ## Angular 4
-
+ - [History of Angular](./angular/history.md)
+ - [Single Page Application](./angular/angular-spa.md)
+ - [WebPack](./angular/webpack.md)
+ - [Angular CLI](./angular/angular-cli.md)
+ - [Node & NPM](./angular/node-npm.md)
+ - [Components](./angular/components.md)
+ - [Modules](./angular/modules.md)
+ - [Directives](./angular/directives.md)
+ - [Pipes](./angular/pipes.md)
+ - [Data Binding](./angular/data-binding.md)
+ - [Services](./angular/services.md)
+ - [Events](./angular/event-emitters.md)
+ - [Pub/Sub Pattern](./angular/pub-sub.md)
+ - [RxJS](./angular/rxjs.md)
+ - [HttpClient](./angular/http-client.md)
+ - [Routing](./angular/routing.md)
+ - [Testing](./angular/testing.md)
+ - [Review](./angular/review.md)
 
 ## Web Services
  - [Intro to Web Services](./web%20services/intro-to-web-services.md)
@@ -167,6 +182,13 @@
 
 ## Unix / Linux
  - [Linux/Unix](./linux/unix-linux.md)
+
+## SDLC:
+ - [Intro to SDLC](./sdlc/intro-sdlc.md)
+ - [Agile/Scrum Concepts](./sdlc/agile-concepts.md)
+ - [Agile vs Waterfall](./sdlc/agile-vs-waterfall.md)
+ - [Story Pointing](./sdlc/stories.md)
+ - [Scrum Ceremonies](./sdlc/scrum-ceremonies.md)
 
 ## Misc.
  - [Git & GitHub](./misc/git-github.md)
