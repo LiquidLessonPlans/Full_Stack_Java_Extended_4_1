@@ -20,7 +20,7 @@ Generally, We use Visual Studio Code or Webstrom as a Code Editor for creating a
 
 The file structure of the Angular application described below:
 
-![](modules/intro-angular/images/FileStructure.png)
+![](./../images/FileStructure.png)
 
 The **e2e** folder at the top level contains source files for a set of end-to-end tests and test-specific configuration files. The **node_modules** folder provides npm packages to the entire workspace. The **src** folder contains the source files which give information about application logic, data, and assets.
 
