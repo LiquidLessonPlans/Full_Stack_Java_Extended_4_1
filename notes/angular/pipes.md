@@ -6,7 +6,7 @@ For example, a Date object shows the date in this format: `Sat Aug 03 2019 19:48
 
 **Syntax:** `{{title | uppercase}}`
 
-![](./images/pipes.png)
+![](./../images/pipes.png)
 
 Pipes can be easily used in HTML templates. For example,
 
