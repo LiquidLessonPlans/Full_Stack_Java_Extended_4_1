@@ -45,6 +45,7 @@
 
 
 
+# Curriculum Notes:
 ## Object Oriented Programming
  - [Object Oriented Programming](./java/object-oriented-programming.md)
 
