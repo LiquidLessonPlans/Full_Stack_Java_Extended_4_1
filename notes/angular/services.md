@@ -103,7 +103,7 @@ To overcome this, we use **Dependency Injection as a Framework** in Angular. A D
 
 ## Using a Service
 
-![](./../images/services.PNG)
+![](./../images/services.png)
 
 
 The Injector holds all the services, and registers them at the NgModule or component level based on their **provider**. A provider tells where in our application to register the service. The registered service can be accessed using a **DI token**. A DI token is a lookup key for the registered services. 
