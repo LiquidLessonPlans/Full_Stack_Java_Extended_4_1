@@ -28,7 +28,7 @@
  - [Services](./angular/services.md)
 
 ### Angular Part 3:
- - [Events](./angular/events.md)
+ - [Events](./angular/event-emitters.md)
  - [Pub/Sub Pattern](./angular/pub-sub.md)
  - [RxJS](./angular/rxjs.md)
  - [HttpClient](./angular/http-client.md)
