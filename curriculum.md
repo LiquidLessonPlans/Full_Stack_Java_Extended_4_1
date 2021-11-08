@@ -11,6 +11,7 @@ We will use the following applications for education and projects throughout the
  - [Apache Maven](https://maven.apache.org/download.cgi)
    - [Adding to PATH in Windows](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)
    - [Adding to PATH in OSX](https://www.architectryan.com/2012/10/02/add-to-the-path-on-mac-os-x-mountain-lion/)
+ - [Node](https://nodejs.org/en/download/)
 
 
 ## Environment
