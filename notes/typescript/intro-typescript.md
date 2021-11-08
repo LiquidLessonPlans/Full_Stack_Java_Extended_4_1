@@ -6,7 +6,7 @@
 * It is **portable** across browsers, devices, and operating systems.
 * It supports **strong typing** or **static typing**, unlike JavaScript. 
 * TypeScript files are saved with a `.ts` extension and then "transpiled" into JavaScript using the TypeScript compiler. 
-* TypeScript gets compiled to JavaScript, which can run on any JavaScript runtime environment.(Eg: Node.js)
+* TypeScript gets transpiled to JavaScript, which can run on any JavaScript runtime environment.(Eg: Node.js)
 
 ### Setting up Typescript
 
