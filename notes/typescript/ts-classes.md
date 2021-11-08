@@ -10,7 +10,7 @@ class Greeting {
     name: string;
     //constructor
     constructor(name: string) {
-        this.greeting = name;
+        this.name = name;
     }
     //methods
     greet() : string {
