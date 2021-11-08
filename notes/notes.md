@@ -6,7 +6,6 @@
  - [TS Variables](./typescript/ts-variables.md)
  - [TS Classes](./typescript/ts-classes.md)
  - [TS Decorators](./typescript/ts-decorators.md)
- - [TS Interfaces](./typescript/ts-interfaces.md)
 
 ### Intro to Angular
  - [History of Angular](./angular/history.md)
@@ -92,7 +91,6 @@
  - [TS Variables](./typescript/ts-variables.md)
  - [TS Classes](./typescript/ts-classes.md)
  - [TS Decorators](./typescript/ts-decorators.md)
- - [TS Interfaces](./typescript/ts-interfaces.md)
 
 ## SQL
  - [Intro to SQL](./sql/intro-to-sql.md)
