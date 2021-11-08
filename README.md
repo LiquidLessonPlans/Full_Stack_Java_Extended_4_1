@@ -12,6 +12,7 @@
 
 ### Sample Repos
  - [Simple Samples](https://github.com/simple-samples)
+ - [hello-angular](https://github.com/210913-java-full-stack/hello-angular)
 
 ### Projects
  - [Project 0](./notes/projects/project-0.md)
