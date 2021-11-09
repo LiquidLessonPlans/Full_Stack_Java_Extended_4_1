@@ -29,7 +29,7 @@ import { Component } from '@angular/core';
 ```
 In this file, we export the *AppComponent* class, and we decorate it with the `@Component` decorator, imported from the `@angular/core` package, which takes a few metadata, such as:
 
-* **selector:** A CSS selector that tells Angular to create and insert an instance of this component wherever it finds the corresponding tag in template HTML. For example, if an app's HTML contains "<app-root></app-root>", then Angular inserts an instance of the AppComponent view between those tags.
+* **selector:** A CSS selector that tells Angular to create and insert an instance of this component wherever it finds the corresponding tag in template HTML. For example, if an app's HTML contains `<app-root></app-root>`, then Angular inserts an instance of the AppComponent view between those tags.
 
 * **templateUrl:** The module-relative address of this component's HTML template. Alternatively, you can provide the HTML template inline, as the value of the **template** property. 
 
