@@ -12,24 +12,24 @@
  - [Single Page Application](./angular/angular-spa.md)
  - [WebPack](./angular/webpack.md)
  - [Angular CLI](./angular/angular-cli.md)
+ - [Node & NPM](./angular/node-npm.md)
 
 ### Angular Part 1:
- - [Node & NPM](./angular/node-npm.md)
  - [Components](./angular/components.md)
  - [Modules](./angular/modules.md)
  - [Directives](./angular/directives.md)
+ - [Data Binding](./angular/data-binding.md)
+ - [Routing](./angular/routing.md)
 
 ### Angular Part 2:
  - [Pipes](./angular/pipes.md)
- - [Data Binding](./angular/data-binding.md)
  - [Services](./angular/services.md)
-
-### Angular Part 3:
  - [Events](./angular/event-emitters.md)
  - [Pub/Sub Pattern](./angular/pub-sub.md)
+
+### Angular Part 3:
  - [RxJS](./angular/rxjs.md)
  - [HttpClient](./angular/http-client.md)
- - [Routing](./angular/routing.md)
  - [Testing](./angular/testing.md)
  - [Review](./angular/review.md)
 
