@@ -19,10 +19,13 @@
  - What are components?
    - Components are the building blocks of Angular apps, and can be as big as a whole page, or as small as a single button or field.
    - Components are made up of 4 files created by the CLI:
-     - template/view in the html file
-     - Style in the css file
-     - 
- - What is a Angular module?
+     - template/view in the .html file
+     - Stylesheet in the .css file
+     - component in the .ts
+     - unit tests in the .spec.ts file
+ - What is an Angular module?
+   - Angular modules contain metadata about one or more components, and are used to describe how the components should be built and injected. The module exposes and makes public components, pipes, directives, etc. And the module can import those things exported by other modules.
+   - Angular is built to be modular, and a module is a container dedicated to a domain, workflow, or closely related set of features.
  - What is a directive?
  - What are examples of structural directives?
  - What are examples of attribute directives?
