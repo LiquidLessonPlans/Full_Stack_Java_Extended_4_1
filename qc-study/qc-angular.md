@@ -1,13 +1,27 @@
 # QC Qeustions on Angular
  - What is Angular?
+   - Typescript based single page application UI framework, developed by Google, used to create dynamic web applications.
  - What are some differences between Angular and AngularJS?
+   - Angular 2+ is TypeScript based, while original flavor is JavaScript based.
+   - Angular 2+ is component based, while Angular is MVC based
+   - Angular 2+ supports mobile devices better
  - What version of Angular are you comfortable working with?
+   - Angular 2 was a major overhaul of the technology, and angular 4+ continues right up to version 13 which is current. We have been using the newest version of Angular, 13.
  - What is the latest released version of Angular?
+   - Angular v13 was released November 2021.
  - What is the Angular CLI?
+   - The command line interface that helps us create, configure, and initialize our Angular apps, modules, and components.
  - How can you create a new Angular project on the command line using the Angular CLI?
+   - ng new <name>
  - How can you create a new component on the command line using the Angular CLI?
- - How can you create a new service on the command line using the Angular CLI?
+   - ng generate component <component-name>
+   - or shorthand: ng g c <component-name>
  - What are components?
+   - Components are the building blocks of Angular apps, and can be as big as a whole page, or as small as a single button or field.
+   - Components are made up of 4 files created by the CLI:
+     - template/view in the html file
+     - Style in the css file
+     - 
  - What is a Angular module?
  - What is a directive?
  - What are examples of structural directives?
@@ -20,6 +34,7 @@
  - What is a Angular pipe?
  - What is a template?
  - What is an Angular service?
+ - How can you create a new service on the command line using the Angular CLI?
  - What is a decorator?
  - What are the properties of the metadata object passed to the @Component decorator?
  - What are the properties of the metadata object passed to the @NgModule decorator?
