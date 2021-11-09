@@ -14,7 +14,7 @@ Before installing Angular CLI, make sure the development environment includes No
 
 The ng serve command launches the server on HTTP port 4200, which watches our files and rebuilds the app as we make changes to those files. The --open (or just -o) option automatically opens the browser to http://localhost:4200.
 
-After running the `ng server -o` command, we will see:
+After running the `ng serve -o` command, we will see:
 
 ![](./../images/app-works.png)
 
