@@ -5,7 +5,7 @@
  - What version of Spring are you comfortable working with? Do you know the latest major version released?
    - The latest major version is version 5, we are currently using spring boot 2.5.6 which includes spring core 5.3.12.
  - What is dependency injection?
-   - This is a technique where an object receives other objects it sepends on, in the most basic form using constructors and setters. 
+   - This is a technique where an object receives other objects it depends on, in the most basic form using constructors and setters. 
  - What is inversion of control?
    - This is a paradigm where program execution and control is handed off to some framework, and our code is invoked by that framework. This inverts the traditional idea of our program beginning with the main method, foolowing our execution, and invoking library methods.
  - How is dependency injection achieved within the Spring framework?
