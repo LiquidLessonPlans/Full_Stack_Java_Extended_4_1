@@ -22,16 +22,16 @@
  - [Routing](./angular/routing.md)
 
 ### Angular Part 2:
- - [Pipes](./angular/pipes.md)
  - [Services](./angular/services.md)
  - [Events](./angular/event-emitters.md)
- - [Pub/Sub Pattern](./angular/pub-sub.md)
+ - [HttpClient](./angular/http-client.md)
 
 ### Angular Part 3:
  - [RxJS](./angular/rxjs.md)
- - [HttpClient](./angular/http-client.md)
  - [Testing](./angular/testing.md)
  - [Review](./angular/review.md)
+ - [Pipes](./angular/pipes.md)
+ - [Pub/Sub Pattern](./angular/pub-sub.md)
 
 ### SDLC:
  - [Intro to SDLC](./sdlc/intro-sdlc.md)
