@@ -1,4 +1,4 @@
-# QC Qeustions on Angular
+# QC Questions on Angular
  - What is Angular?
    - Typescript based single page application UI framework, developed by Google, used to create dynamic web applications.
  - What are some differences between Angular and AngularJS?
@@ -27,30 +27,44 @@
    - Angular modules contain metadata about one or more components, and are used to describe how the components should be built and injected. The module exposes and makes public components, pipes, directives, etc. And the module can import those things exported by other modules.
    - Angular is built to be modular, and a module is a container dedicated to a domain, workflow, or closely related set of features.
  - What is a directive?
+   - A class that is used as a marker/attribute on a DOM element that allows us to manipulate the DOM.
  - What are examples of structural directives?
+   - \*ngIf, \*ngFor, \*ngSwitch - note these all begin with a \*.
  - What are examples of attribute directives?
+   - [ngClass], [ngStyle] - note that these are surrounded by []
  - Is a component considered a directive? Why or why not?
+   - No, a directive is a class and is used inline as part of HTML elements. There is a component directive, but it is not an angular component. A directive is declared in a single .ts file, while components are described in at least 2 files, .html and .ts.
  - What are the different types of data binding supported by Angular?
+   - one-way data binding: String interpolation, Property binding, event binding
+   - two-way data binding: a mix of property binding and event binding.
  - What is interpolation? Is it different than property binding?
+   - interpolation is where we inline the value of a string from our component into our template/view using {{ string }} syntax. This is different from property binding. Property binding can be used with non-strings.
  - What is event binding? Describe the syntax
+   - Allows us to bind events such as keystrokes to a function in the component file. When these events occur, the data is sent to that funciton. This is one-way from template -> component.
  - What is two-way binding? Describe the syntax and name the directive required
- - What is a Angular pipe?
+   - Combining property and event bindings, we use the "banana-in-a-box syntax with the ngModel directive to achieve two-way binding.
  - What is a template?
- - What is an Angular service?
- - How can you create a new service on the command line using the Angular CLI?
+   - A template is the file containing html that describes what the component will look like (AKA the view)
  - What is a decorator?
+   - A decorator is similar to a Java annotation, it is a function that is used to alter classes, methods, parameters, etc. It is used with @FunctionName syntax.
+ - How does routing work in Angular?
+   - Routing is used to hide or display components in the DOM view, and is analogous in SPA to navigating around different HTML pages. We have an element <router-outlet> which displays those components that we route to. We use the anchor tag `<a>` to dentote a route, but use the routerLink attribute in place of href.
+ - Where does the ngModel directive come from?
+   - Angular's FormsModule, which we import in order to use ngModel.
+ - What makes a “single page application” (SPA) different from a normal web page?
+   - A single page applicaiton is front-loaded, as in all of the components and data are loaded at once, and we don't need to invoke any more loads to get to different parts of our application. A traditional web site has different pages, and as we navigate around we request each page one at a time. In SPA instead of viewing different pages, we simply hide and show different components as needed.
+ - What is an Angular service?
+ - What is a Angular pipe?
+ - How can you create a new service on the command line using the Angular CLI?
  - What are the properties of the metadata object passed to the @Component decorator?
  - What are the properties of the metadata object passed to the @NgModule decorator?
  - How are components registered to an Angular module?
  - How are directives registered to an Angular module?
  - How are services registered to an Angular module?
  - How are pipes registered to an Angular module?
- - How does routing work in Angular?
- - Where does the ngModel directive come from?
  - What is the purpose of the HttpClientModule?
  - What is an observable? Describe some of their use cases in Angular applications
  - How can a component be notified of new values provided to an observable?
- - What makes a “single page application” (SPA) different from a normal web page?
  - Explain the difference between server-side and client-side rendering
  - What are some features of the Angular framework?
  - How does TypeScript relate to JavaScript? What are the major benefits of using it over JavaScript?
