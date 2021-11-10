@@ -24,7 +24,10 @@ This project will be done in teams of 5-6 members that will be assigned when we 
 8. All Exceptions are caught and logged to a file
 9. Data useful to the application is retrieved from a third party API
 10. Adequate test coverage for the service-layer
-11. DevOps CI/CD pipeline is used to build and deploy project to a publicly available remote location
+
+
+### Bonus Features:
+1. DevOps CI/CD pipeline is used to build and deploy project to a publicly available remote location
 
 
 ## Your App Here
