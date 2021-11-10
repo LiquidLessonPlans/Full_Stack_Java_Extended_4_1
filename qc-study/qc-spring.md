@@ -105,7 +105,7 @@
  - What are cross-cutting concerns? Provide examples
    - A problem that needs solving throughout our application, not tied to any specific layer, class, or functionality. Security, logging, error/exception handling, data access, etc.
  - What is an aspect?
-   - An aspect encapsulates advice. It is a class or other encapsulation that contains the advice needed to solve cross-cutting concerns.
+   - An aspect encapsulates advice. It is a class that contains the advice needed to solve cross-cutting concerns.
  - What is the difference between a join point and a pointcut?
    - A join point is the point in program execution at which the advice is needed, it is targetted by a point cut which advises the program at the join point.
  - What are some different types of pointcut designators?
