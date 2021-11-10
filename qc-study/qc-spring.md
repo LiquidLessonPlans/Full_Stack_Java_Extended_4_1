@@ -67,7 +67,7 @@
  - What are transaction propagation levels in Spring ORM?
    - MANDATORY, NESTED, NEVER, NOT_SUPPORTED, REQUIRED, REQUIRES_NEW, SUPPORTS
  - What are some examples of JSR-303 (Bean Validator) annotations?
-   - @AssetFalse, @AssertTrue, @DecimalMax, @DecimalMin, @Digits, @Future, @Past, @Max, @Min, @NotNull, @Pattern
+   - @AssertFalse, @AssertTrue, @DecimalMax, @DecimalMin, @Digits, @Future, @Past, @Max, @Min, @NotNull, @Pattern
  - What is the purpose of the RestTemplate class within Spring?
    - RestTemplate allows us to create a client that consumes a remote API inside our Spring application. This feature is depricated as of Spring version 5.
  - What is Spring Boot?
