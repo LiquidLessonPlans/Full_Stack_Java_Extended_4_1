@@ -8,7 +8,7 @@
 
 One-way data binding allows us to manipulate the views through the models. If we make any changes in the class, it gets reflected in the template. In Angular, One-way data binding achieved through:
 
-* Interpolation or String Interpolation
+* Interpolation AKA String Interpolation
 * Property binding
 * Event binding
 
