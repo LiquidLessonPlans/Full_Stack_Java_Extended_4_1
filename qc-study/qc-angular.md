@@ -54,13 +54,27 @@
  - What makes a “single page application” (SPA) different from a normal web page?
    - A single page applicaiton is front-loaded, as in all of the components and data are loaded at once, and we don't need to invoke any more loads to get to different parts of our application. A traditional web site has different pages, and as we navigate around we request each page one at a time. In SPA instead of viewing different pages, we simply hide and show different components as needed.
  - What is an Angular service?
- - What is a Angular pipe?
+   - An angular service is a class that is instantiated as a singleton object and exposes functionality to the components and modules to which is it provided. 
+   - Good use cases for services in angular include: API consumption, inter-component/module communication, addressing cross cutting concerns
  - How can you create a new service on the command line using the Angular CLI?
+   - ng generate service <service-name> AKA ng g s <service-name>
  - What are the properties of the metadata object passed to the @Component decorator?
+   - template - used to write the template (html) code inline
+   - templateUrl - used to point to a file containing the template code (html)
+   - selector - indicates the element that can be used to nest this component in another template
+   - styleUrls - used to indicate the file containing CSS styling for this component
  - What are the properties of the metadata object passed to the @NgModule decorator?
+   - declarations - describe which components will be used in this module
+   - imports - describes other modules whose functionality should be exposed to this module and it's components
+   - providers - describes services that will be available to this module and it's component
+   - bootstrap - describes the components needed to load the app-level module and root component - part of the initial bootstrap process
  - How are components registered to an Angular module?
+   - CLI command: `ng generate component <directive-name>` registers components in the @NgModule decorated object, in the declarations array
  - How are directives registered to an Angular module?
+   - CLI command: `ng generate directive <directive-name>` which registers these in the declarations array of the @NgModule decorated object.
  - How are services registered to an Angular module?
+   - CLI command: `ng generate service <service-name>` which generates the files, which contain the @Injetable decorated object which tells angular where to expose the service
+ - What is a Angular pipe?
  - How are pipes registered to an Angular module?
  - What is the purpose of the HttpClientModule?
  - What is an observable? Describe some of their use cases in Angular applications
