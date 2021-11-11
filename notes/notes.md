@@ -27,9 +27,9 @@
  - [HttpClient](./angular/http-client.md)
 
 ### Angular Part 3:
+ - [Pub/Sub Pattern](./angular/pub-sub.md)
  - [RxJS](./angular/rxjs.md)
  - [Pipes](./angular/pipes.md)
- - [Pub/Sub Pattern](./angular/pub-sub.md)
  - [Review](./angular/review.md)
  - [Testing](./angular/testing.md)
 
