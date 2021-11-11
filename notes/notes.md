@@ -28,10 +28,10 @@
 
 ### Angular Part 3:
  - [RxJS](./angular/rxjs.md)
- - [Testing](./angular/testing.md)
- - [Review](./angular/review.md)
  - [Pipes](./angular/pipes.md)
  - [Pub/Sub Pattern](./angular/pub-sub.md)
+ - [Review](./angular/review.md)
+ - [Testing](./angular/testing.md)
 
 ### SDLC:
  - [Intro to SDLC](./sdlc/intro-sdlc.md)
