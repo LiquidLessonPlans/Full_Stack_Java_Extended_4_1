@@ -120,16 +120,40 @@
  - What is the benefit of using a directive like NgClass over the class attribute, or even property binding to the class attribute?
    - NgClass directive can be used to apply multiple class-selectors to a DOM element. It can also apply selectors based on expressions for more robust logic.
  - What is a pipe? A service?
+   - a pipe is an angular feature that translates or formats data into another representation. Pipes can be chained where input to one is output from the previous.
+   - a service is an angular class, instantiated as a singleton and shared between modules and components
  - How would you create a custom pipe? What about a service?
+   - CLI Command: `ng generate pipe <pipe-name>`, then complete the implementation in the .pipe.ts file
+   - CLI Command: `ng generate service <service-name>`, then complete the implementation in the .service.ts file
  - How does dependency injection work in Angular?
+   - The dependency is marked with an @Injector decorator that includes to which modules it is provided. The dependency can be injected into components that require it (based on type) provided they are children of the modules to which the dependency is provided.
  - What is an Angular module? What properties should you set inside it?
+   - An angular module is a cohesive block of code that is dedicated to a particular domain, workflow, or feature. They can export functionality making it available to other modules, and can import exposed functionality from other modules.
+   - The meta-data properties of a module include:  imports, providers, declarations, exports, bootstrap
  - What’s the difference between a JavaScript module and Angular module? What are some common Angular modules?
+   - A JavaScript module is an individual file with JavaScript code, usually containing a class or a library of functions
+   - An NgModule is a class marked by the @NgModule decorator with a metadata object that describes how that particular part of the application fits together with the other parts. NgModules are specific to Angular.
  - How would you lazy load a module?
+   - By default angular modules are eagerly loaded. To lazily load Angular modules, use `loadChildren:`, instead of `component:`, in the routes array of your AppRoutingModule
  - How have you used the HttpClient? What methods does it have and what do they return?
+   - HttpClient is used to make HTTP requests. HttpClient includes methods for GET, POST, PUT, and other HTTP methods. These return Observable objects.
  - What is an Observable? What’s the difference between it and a Promise?
+   - Similar to a promise, an observable can be a placeholder until the data is resolved. Unlike promises, observables can emit multiple items. Promises can only resolve to a single item.
  - What forms of data binding does Angular support? Explain the syntax for each
+   - String interpolation - one-way data binding where data in the component is referenced by the template and often visible in the view. Syntax: {{ identifierName }}
+   - Property binding - one-way data binding where data in the component is referenced by the template. Syntax: [identifierName]
+   - Event binding - one-way data binding where data is sent from the template as an event to the component. Syntax: (eventName)="eventHandler()"
+     - Two-way data binding can be achieved by combining property and event binding with banana-in-a-box syntax:  [(NgModel)]="value"
  - What does Webpack do for your ng project?
+   - Packages angular modules into payloads that can be loaded at once, rather than loading scripts and assets separately. This front-loads the load times and reduces overhead.
  - How would you implement routing in your project?
+   - When creating a new project, accept routing as a feature when prompted. Then we include the path and components to be routed to in the routes attribute of the router meta-data.
+   - To add into an existing project: include the RouterModule in the module dependencies metadata, add the routes array to the module, and include the <router-outlet> element in a template. Also can use the CLI command: `ng generate module app-routing`
  - What is an EventEmitter and when would you use one?
+   - this "emits" custom events using the @Output decorator, we emit events to send data to the parent component, or to an observable that allows other components to observe that data.
  - What’s the difference between using reactive and template-driven forms? How would you setup each?
+   - Template-driven forms make use of the `FormsModule`, while reactive forms are based on `ReactiveFormsModule`.
+   - Template-driven forms are asynchronous in nature, whereas Reactive forms are mostly synchronous.
+   - Template-driven form logic is mostly controlled by the template, while reactive form logic is in the template file.
  - How would you run your unit tests for an Angular project?
+   - CLI command: `ng test`
