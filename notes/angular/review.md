@@ -82,7 +82,7 @@ The **e2e** folder at the top level contains source files for a set of end-to-en
 * It can be used to **manipulate the DOM** for adding or removing elements, similar to JavaScript.
 * It is **portable** across browsers, devices, and operating systems.
 * It supports **strong typing** or **static typing**, unlike JavaScript.
-* TypeScript files are saved with a `.ts` extension and then compiled into JavaScript using the TypeScript compiler.
+* TypeScript files are saved with a `.ts` extension and then "transpiled" into JavaScript using the TypeScript compiler.
 * TypeScript gets compiled to JavaScript, which can run on any JavaScript runtime environment.(Eg: Node.js)
 
 ##### Angular Components
