@@ -17,7 +17,7 @@
    - ng generate component <component-name>
    - or shorthand: ng g c <component-name>
  - What are components?
-   - Components are the building blocks of Angular apps, and can be as big as a whole page, or as small as a single button or field.
+   - Components are the building blocks of Angular apps, and can be as big as a whole page, or as small as a single button or field. The @Component decorator denotes a component class which is a specialized type of directive that is always associated with a template.
    - Components are made up of 4 files created by the CLI:
      - template/view in the .html file
      - Stylesheet in the .css file
