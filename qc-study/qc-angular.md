@@ -17,8 +17,8 @@
    - ng generate component <component-name>
    - or shorthand: ng g c <component-name>
  - What are components?
-   - Components are the building blocks of Angular apps, and can be as big as a whole page, or as small as a single button or field. The @Component decorator denotes a component class which is a specialized type of directive that is always associated with a template.
-   - Components are made up of 4 files created by the CLI:
+   - A component is a special type of directive, and is a class that contains data and logic for our view. Sometimes the word component is used to refer to the entire view, which is made up of the template, component, and styles (also unit test file). However, technically, the component is just the class decorated with the @Component decorator in the name.component.ts file. Components are the building blocks of Angular apps, and can be as big as a whole page, or as small as a single button or field.
+   - Views are made up of 4 files created by the CLI: (but sometimes you may hear people refer to a view as a component.)
      - template/view in the .html file
      - Stylesheet in the .css file
      - component in the .ts
@@ -75,22 +75,50 @@
  - How are services registered to an Angular module?
    - CLI command: `ng generate service <service-name>` which generates the files, which contain the @Injetable decorated object which tells angular where to expose the service
  - What is a Angular pipe?
+   - The angular pipe is a special function that can format or change the representation of data. Syntax: {{ dateVariable | date }} //changes the format of the date text
+   - not to be confused with the Observable class .pipe() method which may be conceptually similar.
  - How are pipes registered to an Angular module?
+   - with the CLI command: `ng generate pipe <pipe-name>`
  - What is the purpose of the HttpClientModule?
+   - This is a module that allows us to make HTTP requests. We primarily use these requests to consume our backend API.
  - What is an observable? Describe some of their use cases in Angular applications
+   - An object that provides support for passing messages between parts of your application. An observer defines methods to publish values which will be consumed by observers.
+   - An observer is an object that subscribes to an observable and defines callback methods to handle the data published to the observable.
  - How can a component be notified of new values provided to an observable?
+   - By using an observer which is an object that subscribes to the observable and defines a next() method which acts whenever new data is published or emitted.
  - Explain the difference between server-side and client-side rendering
+   - Server-side rendering, like we see in Angular apps, presents a view and makes calls to an API to get data to fill out that view.
+   - Client-side rendering, like MVC pattern, used to be more popular and is where the backend delivers an entire and complete HTML document.
  - What are some features of the Angular framework?
+   - Support for mobile displays as of Angular2+
+   - CLI - which gives us commands to generate and modify the Angular project easily
+   - Single page application support (including webpacking)
+   - built-in testing support with Jasmine
+   - animation features
+   - Code generation - our template, components, modules, and other files are combined into views that are optimized for javascript virtual machines
+   - Dependency Injection via injectors
  - How does TypeScript relate to JavaScript? What are the major benefits of using it over JavaScript?
+   - TypeScript is a superset of JavaScript which supports strict typing, classes, interfaces, and other OOP concepts that JS lacks.
+   - Strong typing helps write better code, modern OOP features help write cleaner code
  - List the data types of TypeScript
+   - Number, String, Boolean, Void, Null, Undefined, and user-defined types like enums, classes, arrays, etc.
  - How would you create a new Angular project?
- - What is a component? How would you create one? List some other commands using the Angular CLI
- - What files make up a component? What is the “spec” file used for?
+   - CLI command: `ng new <project-name>`
  - Explain the relevance of npm to Angular projects. Which file does npm use to track dependencies?
+   - npm is used to manage packages that Angular may need, including Angular itself. 
+   - package.json is used to track dependencies
  - List some decorators for Angular apps
+   - @Component, @Directive, @NgModule, @Decorator, @Pipe, @Service, @Injectable
  - What is the lifecycle of a component? List some lifecycle hooks
+   - Instantiation, service(continuous detection of changes to data-bound properties and updating the DOM accordingly), destruction
+   - constructor, ngOnChanges, ngOnInit, ngDoCheck, ngAfterContentInit, ngAfterContentChecked, ngAfterViewInit, ngAfterViewChecked, ngOnDestroy
  - What is a directive and what are the different types? How to tell these directives apart with syntax?
+   - A directive is a class marked with the @Directive decorator, a directive is a class which applies behaviors to DOM elements.
+   - Attribute directives which are written with square brackets like [NgClass]
+   - Structural directives which are written with the \* like \*NgFor and \*NgIf
+   - Component directives - components associated with an HTML template
  - What is the benefit of using a directive like NgClass over the class attribute, or even property binding to the class attribute?
+   - NgClass directive can be used to apply multiple class-selectors to a DOM element. It can also apply selectors based on expressions for more robust logic.
  - What is a pipe? A service?
  - How would you create a custom pipe? What about a service?
  - How does dependency injection work in Angular?
