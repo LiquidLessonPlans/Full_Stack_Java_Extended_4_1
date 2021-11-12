@@ -23,7 +23,7 @@ This project will be done in teams of 5-6 members that will be assigned when we 
 7. Documentation (all classes and methods have adequate Javadoc comments)
 8. All Exceptions are caught and logged to a file
 9. Data useful to the application is retrieved from a third party API
-10. Adequate test coverage for the service-layer
+10. Adequate test coverage for the service-layer - choose at least one service layer class that has methods that make sense to test. Write a robust, valid test suite for that class attempting to achieve high % line coverage. Make sure to mock at least one object and intercept at least one method with your mock, and that can show that you understand unit testing well enough. 
 
 
 ### Bonus Features:
