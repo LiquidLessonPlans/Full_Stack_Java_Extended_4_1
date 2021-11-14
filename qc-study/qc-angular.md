@@ -33,7 +33,7 @@
  - What are examples of attribute directives?
    - [ngClass], [ngStyle] - note that these are surrounded by []
  - Is a component considered a directive? Why or why not?
-   - No, a directive is a class and is used inline as part of HTML elements. There is a component directive, but it is not an angular component. A directive is declared in a single .ts file, while components are described in at least 2 files, .html and .ts.
+   - Yes, a component is a special type of directive. The `@Directive` and `@Component` decorators are used to mark classes. `@Component` extends `@Directive`, and marks a class as a special type of directive used to create views in the DOM.
  - What are the different types of data binding supported by Angular?
    - one-way data binding: String interpolation, Property binding, event binding
    - two-way data binding: a mix of property binding and event binding.
