@@ -51,10 +51,10 @@
    - PROS: 
      - Security - less chance sensitive info can be extracted from server memory.
      - Server-side interruptions will not necessarily impact clients.
+     - Scalability - you can implement horizontal scaling easily
      - Adheres to RESTful constraints
    - CONS: 
-     - Memory footprint
-     - Each request carrys more info
+     - Each request carrys more info and is more complex to process
      - Complexity
  - What is Caching?
    - Storing frequently accessed information for rapid repeated lookup.
