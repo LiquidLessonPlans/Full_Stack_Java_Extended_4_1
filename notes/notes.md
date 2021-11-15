@@ -5,9 +5,9 @@
 
 ### Microservices
  - [Intro to MSA](./microservices/intro-MSA.md)
- - Review: [Intro to Web Services](./web%20services/intro-to-web-services.md)
- - Review: [Intro to HTTP](./web%20services/intro-to-http.md)
- - Review: [Client-Server Architecture](./web%20services/client-server-architecture.md)
+   - Review: [Intro to Web Services](./web%20services/intro-to-web-services.md)
+   - Review: [Intro to HTTP](./web%20services/intro-to-http.md)
+   - Review: [Client-Server Architecture](./web%20services/client-server-architecture.md)
 
 
 # Curriculum Notes:
