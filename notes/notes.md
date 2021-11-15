@@ -1,6 +1,7 @@
 # Java Full Stack Extended 4.1 Notes
 
-## **\*NEW\***
+## Assigned Reading:
+ - [Richardson Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html)
 
 ### Microservices
  - [Intro to MSA](./microservices/intro-MSA.md)
