@@ -126,7 +126,7 @@
    - CLI Command: `ng generate pipe <pipe-name>`, then complete the implementation in the .pipe.ts file
    - CLI Command: `ng generate service <service-name>`, then complete the implementation in the .service.ts file
  - How does dependency injection work in Angular?
-   - The dependency is marked with an @Injector decorator that includes to which modules it is provided. The dependency can be injected into components that require it (based on type) provided they are children of the modules to which the dependency is provided.
+   - The dependency is marked with an @Injectable decorator that marks it as a dependency to be injected. The decorator includes the `providedIn` attribute which indicates modules the injectable should be exposed to. The dependency can be injected into components that require it (based on type) provided they are children of the modules to which the dependency is provided.
  - What is an Angular module? What properties should you set inside it?
    - An angular module is a cohesive block of code that is dedicated to a particular domain, workflow, or feature. They can export functionality making it available to other modules, and can import exposed functionality from other modules.
    - The meta-data properties of a module include:  imports, providers, declarations, exports, bootstrap
