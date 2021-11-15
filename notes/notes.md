@@ -1,45 +1,12 @@
 # Java Full Stack Extended 4.1 Notes
 
 ## **\*NEW\***
-### TypeScript
- - [Intro to TypeScript](./typescript/intro-typescript.md)
- - [TS Variables](./typescript/ts-variables.md)
- - [TS Classes](./typescript/ts-classes.md)
- - [TS Decorators](./typescript/ts-decorators.md)
 
-### Intro to Angular
- - [History of Angular](./angular/history.md)
- - [Single Page Application](./angular/angular-spa.md)
- - [WebPack](./angular/webpack.md)
- - [Angular CLI](./angular/angular-cli.md)
- - [Node & NPM](./angular/node-npm.md)
-
-### Angular Part 1:
- - [Components](./angular/components.md)
- - [Modules](./angular/modules.md)
- - [Directives](./angular/directives.md)
- - [Data Binding](./angular/data-binding.md)
- - [Routing](./angular/routing.md)
-
-### Angular Part 2:
- - [Services](./angular/services.md)
- - [Events](./angular/event-emitters.md)
- - [HttpClient](./angular/http-client.md)
-
-### Angular Part 3:
- - [Pub/Sub Pattern](./angular/pub-sub.md)
- - [RxJS](./angular/rxjs.md)
- - [Pipes](./angular/pipes.md)
- - [Review](./angular/review.md)
- - [Testing](./angular/testing.md)
-
-### SDLC:
- - [Intro to SDLC](./sdlc/intro-sdlc.md)
- - [Agile/Scrum Concepts](./sdlc/agile-concepts.md)
- - [Agile vs Waterfall](./sdlc/agile-vs-waterfall.md)
- - [Story Pointing](./sdlc/stories.md)
- - [Scrum Ceremonies](./sdlc/scrum-ceremonies.md)
-
+### Microservices
+ - [Intro to MSA](./microservices/intro-MSA.md)
+ - [Intro to Web Services](./web%20services/intro-to-web-services.md)
+ - [Intro to HTTP](./web%20services/intro-to-http.md)
+ - [Client-Server Architecture](./web%20services/client-server-architecture.md)
 
 
 # Curriculum Notes:
@@ -135,14 +102,14 @@
  - [Components](./angular/components.md)
  - [Modules](./angular/modules.md)
  - [Directives](./angular/directives.md)
- - [Pipes](./angular/pipes.md)
  - [Data Binding](./angular/data-binding.md)
+ - [Routing](./angular/routing.md)
  - [Services](./angular/services.md)
  - [Events](./angular/event-emitters.md)
+ - [HttpClient](./angular/http-client.md)
  - [Pub/Sub Pattern](./angular/pub-sub.md)
  - [RxJS](./angular/rxjs.md)
- - [HttpClient](./angular/http-client.md)
- - [Routing](./angular/routing.md)
+ - [Pipes](./angular/pipes.md)
  - [Testing](./angular/testing.md)
  - [Review](./angular/review.md)
 
@@ -187,6 +154,7 @@
  - [Agile vs Waterfall](./sdlc/agile-vs-waterfall.md)
  - [Story Pointing](./sdlc/stories.md)
  - [Scrum Ceremonies](./sdlc/scrum-ceremonies.md)
+
 
 ## Misc.
  - [Git & GitHub](./misc/git-github.md)
