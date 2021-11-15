@@ -61,6 +61,6 @@ You should be employing the following technologies in your project.
 
 ## Deadline & Presentation
  - Finalized version of your project must be pushed to your team's p2 repository within the training originzation by 9:00 AM Central time on the date of the presentation showcase. Commits after that time will not be considered. The most recent commit submitted before that time will be the version of the project that is graded.
-   - Presentation Showcase (Due Date): Wednesday, November 17th 2021, 9:00 AM CDT.
+   - Presentation Showcase (Due Date): Thursday, November 18th 2021, 9:00 AM CDT.
  - You will give a brief (15 minute) presentation of your project. Be prepared to answer questions about your work from the QC team. Everyone involved should be part of the presentation and speak about some part of the project.
  - Your work **MUST BELONG TO YOUR TEAM**. Collaboration is allowed and encouraged, but at the end of the project you must have an excellent understanding of every line of code in your project and be able to answer questions about any part of it.
