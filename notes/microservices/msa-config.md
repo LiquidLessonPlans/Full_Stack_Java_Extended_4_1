@@ -6,7 +6,7 @@ In the cloud, configuration can’t simply be embedded inside the application. T
 
 Spring Cloud Config provides server-side and client-side support for externalized configuration in a distributed system. With Spring Cloud Config Server, we have a central place to manage external properties for applications across all environments. Services can consume their application properties from the Config Server rather than loading them locally from the file system or classpath. Configuration is not stored in the Config Server itself but pulled from a Git repository. This allows us to manage our application configuration with all the benefits of version control. 
 
-![](./images/config-servers.PNG)
+![](./../images/config-servers.png)
 
 ***Spring Cloud Config Server*** - Spring Cloud Config Server provides an HTTP resource-based API for external configuration (name-value pairs or equivalent YAML content). The server is embeddable in a Spring Boot application, by using the `@EnableConfigServer` annotation.
 
