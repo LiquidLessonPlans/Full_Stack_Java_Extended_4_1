@@ -1,11 +1,29 @@
 # QC Questions on Microservices
  - Describe the microservice architecture pattern.
+   - In contrast to a monolithic application MSA splits the different functionality into many small independent services that run on their own, and may even have their own individual database.
  - How are microservices different than SOA?
+   - In MSA the services are usually smaller and more specific, and there are many more of them. 
+   - In SOA traditionally there is still only one datasource, in MSA each service may have it's own datasource. 
+   - SOA was envisioned split modules into separate services, MSA was envisioned to further split into independent services the smallest logical units.
+   - MSA is considered an extension of SOA. SOA made applications more modular, MSA continued this trend.
  - What are some advantages to using microservices?
+   - Fault tolerance - is a service goes down, the other services stay up and can resume functionality when the service comes back.
+   - Scalability - particularly horizontal scalability - the nature of MSA makes it very easy to scale up and down as needed.
+   - Delegation - Efforts can be split into multiple dev teams working on individual services.
+   - Refactorability - Making significant changes to a service doesn't impact the other services.
+   - Tech Independence - We can choose the perfect technologies for a given service, each servie having it's own frameworks, libraries, and even languages.
  - What are some disadvantages to using microservices?
+   - Complexity - design of good MSA solutions is far more complex than traditional monoliths.
+   - Cost - With greater complexity comes greater cost: human resources, knowlege, time, money, all costs go up.
  - What is a "monolithic" application?
+   - A application designed and deployed as a single service (or maybe two in client-server), this was the traditional way of writing solutions.
  - Can a Java microservice communicate with a Node.js microservice? Why or why not? 
+   - Yes. Microservies can be designed with completely different techs and environments, and communicate with a common protocol (Like JSON or XML).
  - How would you approach deconstructing a monolith into microservices?
+   - Identify logical units that can operate independently, like layers, modules, classes, and separate these into independent services.
+   - Identify which data goes with which services and split the datasource into multiple datasources.
+   - Establish some protocols for communication between services.
+   - Splitting the application apart introduces new requirements for things like: gateway, configuration, load balancing, session management, monitoring, and detection. Se we need solutions to these new problems as well. 
  - What design patterns are commonly used in microservices?
  - What implementation of API Gateway have you used?
  - What implementation of Service Discovery have you used?
