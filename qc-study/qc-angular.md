@@ -87,8 +87,8 @@
  - How can a component be notified of new values provided to an observable?
    - By using an observer which is an object that subscribes to the observable and defines a next() method which acts whenever new data is published or emitted.
  - Explain the difference between server-side and client-side rendering
-   - Server-side rendering, like we see in Angular apps, presents a view and makes calls to an API to get data to fill out that view.
-   - Client-side rendering, like MVC pattern, used to be more popular and is where the backend delivers an entire and complete HTML document.
+   - Client-side rendering, like we see in Angular apps, presents a view and makes calls to an API to get data to fill out that view.
+   - Server-side rendering, like MVC pattern, used to be more popular and is where the backend delivers an entire and complete HTML document.
  - What are some features of the Angular framework?
    - Support for mobile displays as of Angular2+
    - CLI - which gives us commands to generate and modify the Angular project easily
