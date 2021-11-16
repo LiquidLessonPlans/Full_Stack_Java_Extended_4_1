@@ -1,0 +1,32 @@
+QC Questions on Microservices
+ - Describe the microservice architecture pattern.
+ - How are microservices different than SOA?
+ - What are some advantages to using microservices?
+ - What are some disadvantages to using microservices?
+ - What is a "monolithic" application?
+ - Can a Java microservice communicate with a Node.js microservice? Why or why not? 
+ - How would you approach deconstructing a monolith into microservices?
+ - What design patterns are commonly used in microservices?
+ - What implementation of API Gateway have you used?
+ - What implementation of Service Discovery have you used?
+ - What implementation of Circuit Breaker are you familiar with?
+ - Who made tools like Eureka, Zuul, and Hystrix?
+ - Where did the dependencies Eureka, Zuul, and Hystrix come from?
+ - What is the purpose of an API gateway and how does Zuul perform this? 
+ - What is service discovery and how does Eureka do this? 
+ - What is the circuit breaker pattern and how does Hystrix implement it? What are the different circuit states? 
+ - How would you configure a Eureka server? (describe dependencies, .yml file, and annotations)
+ - How would you configure a Eureka client? (describe dependencies, .yml file, and annotations)
+ - How would you configure a config server? (describe dependencies, .yml file, and annotations)
+ - How would you configure a Zuul reverse proxy? (describe dependencies, .yml file, and annotations)
+ - Describe how you would configure Zuul routes.
+ - What are Zuul filters? Name some different kinds.
+ - Explain how persistence works in a distributed architecture.
+ - What is a heartbeat in context of Spring Cloud microservices?
+ - If using centralized configuration, what is a recommended order to spin up microservices locally?
+ - How can we establish synchronous communication between our microservices?
+ - What is FeignClient?
+ - How can you increase the resilency of your microservice architecture?
+ - How can we establish asynchronous communication between our microservices?
+ - What are messaging queues? What technologies did you work with to implement messaging queues?
+ - Name some other technologies that serve as messaging queue solutions
