@@ -9,6 +9,7 @@
    - Review: [Intro to HTTP](./web%20services/intro-to-http.md)
    - Review: [Client-Server Architecture](./web%20services/client-server-architecture.md)
  - [Richardson Maturity Model](./web%20services/rest-rmm.md)
+ - [Content Negotiation](./web%20services/content-negotiation.md)
 
 # Curriculum Notes:
 ## Object Oriented Programming
