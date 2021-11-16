@@ -11,6 +11,10 @@
  - [Richardson Maturity Model](./web%20services/rest-rmm.md)
  - [Content Negotiation](./web%20services/content-negotiation.md)
  - [REST Best Practices](./web%20services/best-practices.md)
+ - [MSA Characteristics](./microservices/msa-charasteristics.md)
+ - [Eureka - Discovery Service](./microservices/msa-discovery.md)
+ - [Consul - Discovery Service](./microservices/msa-consul.md)
+ - [Config Server](./microservices/msa-config.md)
 
 # Curriculum Notes:
 ## Object Oriented Programming
