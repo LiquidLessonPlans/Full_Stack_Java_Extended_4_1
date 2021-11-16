@@ -13,7 +13,7 @@ Service discovery is a method for application components to locate each other.  
 * Services query the service registry to retrieve the details for the required microservice and then connect to it.  
 * The registry maintains a **heartbeat mechanism** to see if services are still up and if not, removes them from the registry.
 
-![](./../images/service-registry-communication.PNG)
+![](./../images/service-registry-communication.png)
 
 [Netflix Eureka](https://github.com/Netflix/eureka/wiki) is a good example of a service registry. It provides a REST API for registering and querying service instances. A service instance registers its network location using a POST request. Every 30 seconds it must refresh its registration using a PUT request. A registration is removed by either using an HTTP DELETE request or by the instance registration timing out. A client can retrieve the registered service instances by using an HTTP GET request.
 
@@ -30,7 +30,7 @@ There are two primary microservice registration patterns to handle the registrat
 
 When using the self-registration pattern, a service instance is responsible for registering and deregistering itself with the service registry. Also, service instances send heartbeat requests to prevent their registration from expiring.
 
-![](./../images/self_registration-pattern.PNG)
+![](./../images/self_registration-pattern.png)
 
 A good example of this approach is the **Netflix OSS Eureka client**. The Eureka client handles all aspects of service instance registration and deregistration. The **Spring Cloud** project, which implements various patterns including service discovery, makes it easy to automatically register a service instance with Eureka. We simply annotate our Java Configuration class with an `@EnableEurekaClient` annotation.
 
@@ -42,7 +42,7 @@ A good example of this approach is the **Netflix OSS Eureka client**. The Eureka
 
 When using the third-party registration pattern, service instances aren’t responsible for registering themselves with the service registry. Instead, another system component known as the **service registrar** handles the registration and deregistration. A service registrar is responsible for identifying that a service has started, registering the service, and unregistering the service when it shuts down or crashes.
 
-![](./../images/third-party-registration-pattern.PNG)
+![](./../images/third-party-registration-pattern.png)
 
 Example of a service registrar - [Netflix OSS Prana](https://github.com/Netflix/Prana/wiki), 
 
@@ -65,7 +65,7 @@ The client contacts a service registry, receives details for available services,
 
 [Netflix OSS](https://netflix.github.io/) provides a great example of the client-side discovery pattern. 
  
-![](./../images/client-side-discovery-pattern.PNG)
+![](./../images/client-side-discovery-pattern.png)
 
 
 ### Server-Side Discovery Pattern
@@ -74,7 +74,7 @@ The client contacts a load balancer, making a request that indicates which type 
 
 An example of a server-side discovery mechanism is AWS [Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/) (ELB). A client makes requests (HTTP or TCP) via the ELB using its DNS name. The ELB load balances the traffic among a set of registered Elastic Compute Cloud (EC2) instances or EC2 Container Service (ECS) containers. There isn’t a separate service registry. Instead, EC2 instances and ECS containers are registered with the ELB itself.
 
-![](./../images/server-side-discovery-pattern.PNG)
+![](./../images/server-side-discovery-pattern.png)
 
 
 In some deployment environments, we need to set up own service-discovery infrastructure using a service registry such as [Netflix Eureka](https://github.com/Netflix/eureka/wiki), [etcd](https://etcd.io/), or [Apache Zookeeper](https://zookeeper.apache.org/). In other deployment environments, service discovery is built in. For example, [Kubernetes](https://kubernetes.io/) and [Marathon](https://mesosphere.github.io/marathon/) handle service instance registration and deregistration. They also run a proxy on each cluster host that plays the role of server-side discovery router.
@@ -85,7 +85,7 @@ Eureka Server is an application that acts as a service registry. Every Microserv
 
 Naviagate to the [Spring Initializr](https://start.spring.io/) and create the Spring Boot project with Eureka server dependency. The following image shows the Initializr set up for the Eureka server application:
 
-![](./../images/spring-initializr-eureka-server.PNG)
+![](./../images/spring-initializr-eureka-server.png)
 
 The preceding image shows the Initializr with Maven chosen as the build tool. It also shows values of `com.revature` and `EurekaServerApplication` as the Group and Artifact, respectively.
 
@@ -132,7 +132,7 @@ You can see the Eureka server is up and running but no application is registered
 
 Navigate to [Spring Initializr](https://start.spring.io/) and create a Spring Boot  Application with DevTools, Actuator, and Discovery Client dependencies. The following image shows the Initializr set up for the Eureka Client application:
 
-![](./../images/eureka-client-setup.PNG)
+![](./../images/eureka-client-setup.png)
 
 The preceding image shows the Initializr with Maven chosen as the build tool. It also shows values of `com.revature` and `EurekaClientApplication` as the Group and Artifact, respectively.
 
@@ -173,7 +173,7 @@ eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
 
 Before running this application, we need to make sure the Eureka Server is up and running. Run the Eureka Client application and navigate to the Eureka Server at http://localhost:8761/. This time we see that the client application registered in Eureka Server.
 
-![](./../images/eureka-client-register.PNG)
+![](./../images/eureka-client-register.png)
 
 
 ## References
