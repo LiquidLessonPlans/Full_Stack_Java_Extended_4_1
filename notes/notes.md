@@ -10,6 +10,7 @@
    - Review: [Client-Server Architecture](./web%20services/client-server-architecture.md)
  - [Richardson Maturity Model](./web%20services/rest-rmm.md)
  - [Content Negotiation](./web%20services/content-negotiation.md)
+ - [REST Best Practices](./web%20services/best-practices.md)
 
 # Curriculum Notes:
 ## Object Oriented Programming
