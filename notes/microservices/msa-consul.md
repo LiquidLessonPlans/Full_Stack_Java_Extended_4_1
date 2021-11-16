@@ -24,7 +24,7 @@ In a monolithic application, the services would expose public functions and it w
 
 Consul maintains a central registry that contains the entry for all the upstream services. When a service instance starts, it gets registered on the central registry. The registry is populated with all the upstream instances of the service.
 
-![consul-service-discovery](./images/consul-service-discovery.png)
+![consul-service-discovery](./../images/consul-service-discovery.png)
 
 **Example** - When a *service A* wants to talk to *service B*, it will discover and communicate with *B* by querying the registry about the upstream service instances of *B*. 
 
