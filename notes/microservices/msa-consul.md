@@ -2,7 +2,7 @@
 
 Microservices and other distributed systems can enable faster, simpler software development. But there's a trade-off resulting in greater operational complexity around inter-service communication, configuration management, and network segmentation. [**HashiCorp Consul**](https://www.hashicorp.com/products/consul/) is an open source tool that solves these new complexities by providing *service discovery*, *health checks*, *load balancing*, *a service graph*, *mutual TLS identity enforcement*, and *a configuration key-value store*. These features make Consul an ideal control plane for a **Service Mesh**.
 
-![consul](./images/consul-1.PNG) 
+![consul](./../images/consul-1.png) 
 
 **Consul Agent** - The [Consul agent](https://www.consul.io/docs/agent) is the core process of Consul. The agent maintains membership information, registers services, runs checks, responds to queries, and more. The agent must run on every node that is part of a Consul cluster.
 
@@ -24,7 +24,7 @@ In a monolithic application, the services would expose public functions and it w
 
 Consul maintains a central registry that contains the entry for all the upstream services. When a service instance starts, it gets registered on the central registry. The registry is populated with all the upstream instances of the service.
 
-![consul-service-discovery](./images/consul-service-discovery.PNG)
+![consul-service-discovery](./images/consul-service-discovery.png)
 
 **Example** - When a *service A* wants to talk to *service B*, it will discover and communicate with *B* by querying the registry about the upstream service instances of *B*. 
 
@@ -46,7 +46,7 @@ The second big challenge we run into is configuration.
 
 Instead of trying to define the configuration in each service distributed throughout our infrastructure, Consul uses a key-value store to capture it centrally.
 
-![consul-kv-store](./images/consul-kv-store.PNG)
+![consul-kv-store](./../images/consul-kv-store.png)
 
 **Example** - We can define a key centrally that says whether our system is in maintenance mode or not , "Are we in maintenance mode?"  and the values can be "true or false". Also, we have to change some default configuration in each service depending upon the state of our system. When the system is in maintenance mode, we change the "Are we in maintenance mode?" key's value centrally from "false to true". Then, push out the changed state to all our services and configure them. Thus, gives consistent view of configuration across all the services.
 
@@ -66,7 +66,7 @@ Consul Connect provides service-to-service connection authorization and encrypti
 
 Consul enforces TLS using an agent-based proxy attached to each service instance. This proxy acts as a sidecar. Applications can use **sidecar proxies** in a service mesh configuration to establish TLS connections for inbound and outbound connections without being aware of Connect at all. Applications may also natively integrate with Connect for optimal performance and security. Connect can help you secure your services and provide data about service-to-service communications.
 
-![](./images/sidecar-proxies.PNG)
+![](./images/sidecar-proxies.png)
 
 We probably have many hundreds of services that exist are not TLS aware. So the advantage of imposing it at the proxy layer is that we can get that guarantee of our data being encrypted in transit without needing to re-implement all of these applications. These sidecar proxies prevents us from making any change into the code of original service.
 
@@ -108,7 +108,7 @@ After that, follow the below steps to install consul using the docker image:
 
 You able to see:
 
-![consul-dashboard](./images/consul-dashboard.PNG)
+![consul-dashboard](./../images/consul-dashboard.png)
 
 > **NOTE:** You can stop the consul server with `docker stop consul` command.
 
@@ -116,7 +116,7 @@ Now, let us create a simple microservice application and we'll make that service
 
 Navigate to the [Spring Initializr](https://start.spring.io/) and create the Spring Boot project with Consul Discover, DevTools, Actuator, and Web dependencies. The following image shows the Initializr set up for the Eureka server application:
 
-![Spring Initializr](./images/consul-example-1.PNG)
+![Spring Initializr](./../images/consul-example-1.png)
 
 The preceding image shows the Initializr with Maven chosen as the build tool. It also shows values of `com.revature` and `helloSerive` as the Group and Artifact, respectively.
 
@@ -181,7 +181,7 @@ In the console, you able to see the logs of `hello-service`  registering with co
 
 To verify that, visit http://localhost:8500/ui/ on our browser. You able to see the `hello-service` registered in the Consul server:
 
-![](./images/consul-example-2.PNG)
+![](./../images/consul-example-2.png)
 
 **HTTP Health Checks** - The health check for a Consul instance defaults to "/health", which is the default locations of a useful endpoint in a Spring Boot Actuator application.  When you visit http://localhost:9999/actuator/health, you able to see:
 ```json
@@ -189,7 +189,7 @@ To verify that, visit http://localhost:8500/ui/ on our browser. You able to see 
 ```
 This implies that our `hello-service` is healthy. Also, you can able to see the health status of `hello-service` on the consul dashboard:
 
-![](./images/consul-healthcheck.png)
+![](./../images/consul-healthcheck.png)
 
 We can change default health check path using `spring.cloud.consul.discovery.healthCheckUrl`  property. Also, we can set the health check intervals using `spring.cloud.consul.discovery.healthCheckInterval` property.
 
