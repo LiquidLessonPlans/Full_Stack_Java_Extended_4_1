@@ -18,7 +18,7 @@ Microservice architecture is much more complex than legacy systems. This environ
 
 For example, a product in the sales context refers to an item in the process of being sold. A product in the support context refers to the item that is already sold to the customer which has some defects, so the customer contacts the support team. 
 
-![](./images/bounded-context.PNG)
+![](./../images/bounded-context.png)
 
 * Finding a root cause for problems – Distributed logic with distributed data increases the effort of finding a root cause. 
 * Version management and cyclic dependencies between services.
