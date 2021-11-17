@@ -1,8 +1,5 @@
 # Java Full Stack Extended 4.1 Notes
 
-## Assigned Reading:
- - [Richardson Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html)
-
 ### Microservices
  - [Intro to MSA](./microservices/intro-MSA.md)
    - Review: [Intro to Web Services](./web%20services/intro-to-web-services.md)
@@ -15,6 +12,10 @@
  - [Eureka - Discovery Service](./microservices/msa-discovery.md)
  - [Consul - Discovery Service](./microservices/msa-consul.md)
  - [Config Server](./microservices/msa-config.md)
+ - [API Gateway](./microservices/msa-gateway.md)
+ - [Load Balancing](./microservices/msa-balancing.md)
+ - [Circuit Breaker Design Pattern](./microservices/msa-circuit-breaker.md)
+ - [Messaging Queues](./microservices/msa-queues.md)
 
 # Curriculum Notes:
 ## Object Oriented Programming
