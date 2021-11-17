@@ -26,9 +26,8 @@ These files are full of questions you are likely to be asked as part of QC. You 
  - Avoid "I think", "Maybe", "I believe", and other "waffling", that is unconfident expectation lowering. This can be a subconscious attempt to soften judgement about your answer. It won't work. Appearing unsure will not increase your correctness, and will detract from your soft skills. This is easier said than done, the waffling is natural and subconscious. The previous tip about setting a confident tone will help your brain subconsciously avoid these phrases.
  - If you think you know the answer but are having trouble recalling the details, start walking your way to the answer. That is, logically begin assembling a foundation from which to make educated guesses. Look for hints in the question: What domain is the QC person asking about? Did they use or avoid using a specific word or phrase? Does this question come on the heels of a question that someone else got wrong? 
 
-## This week's QC:
- - [Angular](./qc-angular.md)
- - [Software Development Lifecycle](./qc-sdlc.md)
+## Final QC - Week of 11/29/21
+Cumulative on all topics. Concentrate studies on core Java and SQL.
 
 ## Microservices:
  - [Microservice Architecture](./qc-msa.md)
@@ -52,10 +51,12 @@ These files are full of questions you are likely to be asked as part of QC. You 
  - [CSS](./qc-css.md)
  - [JavaScript](./qc-javascript.md)
  - [AJAX](./qc-ajax.md)
+ - [Angular](./qc-angular.md)
 
 ### Web Services
  - [REST](./qc-rest.md)
+ - [Microservice Architecture](./qc-msa.md)
 
 ### Misc.
  - [DevOps](./qc-devops.md)
-
+ - [Software Development Lifecycle](./qc-sdlc.md)
