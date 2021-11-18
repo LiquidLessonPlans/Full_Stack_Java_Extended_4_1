@@ -16,6 +16,9 @@
  - [Load Balancing](./microservices/msa-balancing.md)
  - [Circuit Breaker Design Pattern](./microservices/msa-circuit-breaker.md)
  - [Messaging Queues](./microservices/msa-queues.md)
+ - [Distributed Tracing](./microservices/msa-tracing.md)
+ - [Monitoring Tools](./microservices/msa-tools.md)
+ - [Containerization](./microservices/msa-containerization.md)
 
 # Curriculum Notes:
 ## Object Oriented Programming
