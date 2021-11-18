@@ -17,7 +17,7 @@
  - [Circuit Breaker Design Pattern](./microservices/msa-circuit-breaker.md)
  - [Messaging Queues](./microservices/msa-queues.md)
  - [Distributed Tracing](./microservices/msa-tracing.md)
- - [Monitoring Tools](./microservices/msa-tools.md)
+ - [Monitoring Tools](./microservices/msa-monitoring.md)
  - [Containerization](./microservices/msa-containerization.md)
 
 # Curriculum Notes:
