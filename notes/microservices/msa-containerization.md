@@ -14,7 +14,7 @@ It's not just different software that can cause problems. If there is any differ
 
 With Docker, we can make our application independent of the host environment. Since we use a microservice architecture, we can now encapsulate each microservice in separate Docker containers. Docker containers are lightweight, resource-isolated environments through which we can build, maintain, ship, and deploy our application.
 
-![Container](./images/container.PNG)
+![Container](./../images/container.png)
 
 You can find a detailed explanation of Docker [here](https://gitlab.com/revature_training/docker-team).
 
