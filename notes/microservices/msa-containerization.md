@@ -1,4 +1,4 @@
-## Containerization
+# Containerization
 
 When we move software from a developer's laptop to a test environment, from a staging environment into production, and perhaps from a physical machine in a data center to a virtual machine in a private or public cloud, problems may arise when the supporting software environment is not identical.
 
