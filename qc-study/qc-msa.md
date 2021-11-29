@@ -82,7 +82,8 @@
  - How can we establish synchronous communication between our microservices?
    - HTTP is synchronous, a client or service can consume another service's endpoints to communicate synchronously, sending HTTP requests and receiving responses.
  - How can we establish asynchronous communication between our microservices?
+   - We can use advanced messaging design patterns, for instance Message Queues such as RabbitMQ, Amazon SQS, or Apache Kafka.
+     - point-to-point - senders and receivers exchange messages through a queue. Senders publish to a queue and receivers consume messages from a queue.
+     - pub/sub - senders can broadcast messages to more than one recipient. Senders broadcast to a topic, and receivers subscribe to that topic to receive broadcasts.
  - What is FeignClient?
- - How can you increase the resilency of your microservice architecture?
- - What are messaging queues? What technologies did you work with to implement messaging queues?
- - Name some other technologies that serve as messaging queue solutions
+   - A library for creating REST API clients in a declarative way. Rather than coding the client normally, you can use the spring web annotations you would normally use in a @Controller bean but on the client side.
