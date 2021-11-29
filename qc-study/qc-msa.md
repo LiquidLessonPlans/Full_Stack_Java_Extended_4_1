@@ -28,15 +28,26 @@
    - Establish some protocols for communication between services.
    - Splitting the application apart introduces new requirements for things like: gateway, configuration, load balancing, session management, monitoring, and detection. Se we need solutions to these new problems as well. 
  - What design patterns are commonly used in microservices?
-   - circuit breaker, API Gateway, database-per-microservice, 
+   - circuit breaker, API Gateway (AKA intelligent routing), database-per-microservice, asynchronous messaging, service discovery
  - What implementation of API Gateway have you used?
+   - Netflix's Zuul gateway service
  - What implementation of Service Discovery have you used?
+   - Netflix's Eureka service registry
  - What implementation of Circuit Breaker are you familiar with?
+   - Netflix's Hystrix library
  - Who made tools like Eureka, Zuul, and Hystrix?
+   - These were made by Netflix
  - Where did the dependencies Eureka, Zuul, and Hystrix come from?
+   - These dependencies can be sourced from Spring Cloud Netflix, a project that provides Netflix Open Source Software integrations for Spring Boot apps.
  - What is the purpose of an API gateway and how does Zuul perform this? 
+   - API gateway is a single service for the UI to connect to that will invoke necessary services and aggregate the results. Zuul applies filters to requests based on URL pattern which invoke our code as needed. 
  - What is service discovery and how does Eureka do this? 
+   - service discovery allows services to discover and connect to each other. Eureka allows services to register themselves with a POST request and keep it's registration active by refreshing with a PUT request every 30 seconds. While an instance of a service is registered it can be disocvered by other services querying Eureka for details.
  - What is the circuit breaker pattern and how does Hystrix implement it? What are the different circuit states? 
+   - A circuit breaker wraps a function call with a monitor and will change it's behavior if it detects a problem with a service. Hystrix watches for failing calls to a method, and if failures build up to a threshold then Hystrix opens the circuit so that subsequent calls automatically fail. While the circuit is open, Hystrix redirects calls to a specified fallback method.
+   - Closed State - When service is up and running, the circuit breaker remains in the closed state and all calls pass through to the services.
+   - Open State - When the number of failures exceeds a predetermined threshold the breaker trips, and it goes into the Open state. In the OPEN state the circuit breaker returns an error for all calls to the service without making the calls to the Supplier Microservice.
+   - Half-Open State - The circuit breaker makes a trial call to the failed service periodically to check if it has recovered. If the call to the service times out, the circuit breaker remains in the Open state. If the call returns successfully, then the circuit switches to the closed state.
  - How would you configure a Eureka server? (describe dependencies, .yml file, and annotations)
  - How would you configure a Eureka client? (describe dependencies, .yml file, and annotations)
  - How would you configure a config server? (describe dependencies, .yml file, and annotations)
