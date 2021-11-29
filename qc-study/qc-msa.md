@@ -1,4 +1,7 @@
 # QC Questions on Microservices
+[microservices.io](https://microservices.io)
+
+
  - Describe the microservice architecture pattern.
    - In contrast to a monolithic application MSA splits the different functionality into many small independent services that run on their own, and may even have their own individual database.
  - How are microservices different than SOA?
@@ -25,6 +28,7 @@
    - Establish some protocols for communication between services.
    - Splitting the application apart introduces new requirements for things like: gateway, configuration, load balancing, session management, monitoring, and detection. Se we need solutions to these new problems as well. 
  - What design patterns are commonly used in microservices?
+   - circuit breaker, API Gateway, database-per-microservice, 
  - What implementation of API Gateway have you used?
  - What implementation of Service Discovery have you used?
  - What implementation of Circuit Breaker are you familiar with?
