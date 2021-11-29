@@ -75,10 +75,14 @@
  - What is a heartbeat in context of Spring Cloud microservices?
    - A heartbeat is used to monitor an instance of a service. In a spring cloud microservice app using eureka a heartbeat is sent from some service to the discovery service periodically in order to keep it's registration active.
  - If using centralized configuration, what is a recommended order to spin up microservices locally?
-   1 - Discovery service 
+   1. Discovery service - launched first so that config service can register itself
+   2. Config service - launched before other services require their configs
+   3. All other services which will configure and register themselves
+   4. Gateway - launch gateway last, opening the door for client requests.
  - How can we establish synchronous communication between our microservices?
+   - HTTP is synchronous, a client or service can consume another service's endpoints to communicate synchronously, sending HTTP requests and receiving responses.
+ - How can we establish asynchronous communication between our microservices?
  - What is FeignClient?
  - How can you increase the resilency of your microservice architecture?
- - How can we establish asynchronous communication between our microservices?
  - What are messaging queues? What technologies did you work with to implement messaging queues?
  - Name some other technologies that serve as messaging queue solutions
