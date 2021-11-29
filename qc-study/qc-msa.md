@@ -49,14 +49,33 @@
    - Open State - When the number of failures exceeds a predetermined threshold the breaker trips, and it goes into the Open state. In the OPEN state the circuit breaker returns an error for all calls to the service without making the calls to the Supplier Microservice.
    - Half-Open State - The circuit breaker makes a trial call to the failed service periodically to check if it has recovered. If the call to the service times out, the circuit breaker remains in the Open state. If the call returns successfully, then the circuit switches to the closed state.
  - How would you configure a Eureka server? (describe dependencies, .yml file, and annotations)
+   - fetch the dependency from maven or some other location. Use the spring-cloud-starter-netflix-eureka-server dependency.
+   - set the properties in application.properties or application.yml file, including the server port and other behaviors.
+   - add the @EnableEurekaServer annotation to the SpringBootApplication class.
  - How would you configure a Eureka client? (describe dependencies, .yml file, and annotations)
+   - fetch the dependency from maven or some other location. Use the spring-cloud-config-server dependency.
+   - set the properties in application.properties or application.yml file, including the eureka service URL.
+   - add the @EnableDiscoveryClient annotation to the SpringBootApplication class.
  - How would you configure a config server? (describe dependencies, .yml file, and annotations)
+   - fetch the dependency from maven or some other location. Use the spring-cloud-starter-netflix-eureka-server dependency.
+   - set up configurations in a git repository, creating .properties files for the different services to be configured
+   - set the properties in application.properties or application.yml file, including port and location of the configurations (git repo)
+   - add the @EnableConfigServer annotation to the SpringBootApplication class.
  - How would you configure a Zuul reverse proxy? (describe dependencies, .yml file, and annotations)
+   - fetch the dependency from maven or some other location. Use the spring-cloud-starter-zuul dependency.
+   - set the properties in application.properties or application.yml file, including the port and any statically defined routes.
+   - add the @EnableZuulProxy annotation to the SpringBootApplication class.
  - Describe how you would configure Zuul routes.
+   - Zuul routes can be configured in the zuul server's configuration (.properties or .yml). They need two parts: path and URL
+   - `zuul.routes.someservice.path=resource/**` and `zuul.routes.someservice.url=http://localhost:54321/`
  - What are Zuul filters? Name some different kinds.
+   - Zuul filters are used to intercept a request and hook into our code. Pre-filters are executed before the request is routed, post-filters after the request is routed, route-filters used to route the request, and error-filters are used to act if an error occurs.
  - Explain how persistence works in a distributed architecture.
+   - A common design pattern for persistence in MSA is database-per-service, where each service has it's own database, rather than having many services be strongly coupled with a monolithic persistence service.
  - What is a heartbeat in context of Spring Cloud microservices?
+   - A heartbeat is used to monitor an instance of a service. In a spring cloud microservice app using eureka a heartbeat is sent from some service to the discovery service periodically in order to keep it's registration active.
  - If using centralized configuration, what is a recommended order to spin up microservices locally?
+   1 - Discovery service 
  - How can we establish synchronous communication between our microservices?
  - What is FeignClient?
  - How can you increase the resilency of your microservice architecture?
